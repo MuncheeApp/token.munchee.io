@@ -27,10 +27,31 @@ img { max-width: 100%; height: auto; }
 
 .container { width: 980px; position: relative; }
 
-#banner-video { position: fixed; width: 100%; top: 0; left: 0; height: 100%; z-index: -2; overflow: hidden; }
-#banner-video .container { height: 100%; }
+#banner-video { position: fixed; width: 100%; top: 0; left: 0; height: 100%; z-index: -2; }
 #banner-video .mchee-video { position: absolute; width: 100%; height: 100%; object-fit: cover; object-position: center center; }
 #banner-video .home-banner-img { display: none; background-image: url(../assets/preview_video.png); background-position: 0 0; background-size: cover; position: absolute; width: 100%; height: 100%; }
+
+.date-countdown { margin-bottom: 100px; }
+
+#countdown-section .left-info { padding-top: 80px; float: left; width: 620px; height: 100%; color: #fff; }
+#countdown-section .left-info .container { height: 100%; top: 95px; }
+#countdown-section .left-info .slogan { font-size: 23px; letter-spacing: 0.2em; margin: 0; }
+#countdown-section .left-info .date-detail { font-size: 21px; margin: 100px 0 30px 0; }
+#countdown-section .left-info .date-section { height: 31px; line-height: 31px; font-size: 24px; box-shadow: black 0px 0px 12.1634px; text-shadow: white 0px 0px 2.43268px; background: #000; width: 610px; margin: 17px 0 17px 5px; }
+#countdown-section .left-info .date-section li { display: inline-block; width: 25%; margin: 0 0 0 -4px; text-align: center; }
+#countdown-section .left-info .date-section li:nth-of-type(3) { padding-left: 14px; }
+#countdown-section .left-info .date-section li:nth-last-of-type(1) { padding-left: 24px; }
+#countdown-section .left-info .btn-group a { width: 273px; height: 62px; line-height: 62px; color: #fff; font-size: 15px; background-color: #ef5454; border: solid #ab0535 0px; border-radius: 50px; margin-right: 40px; text-align: center; transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s; }
+#countdown-section .left-info .btn-group a:hover { background-color: white; border-color: #ef5454; color: #ef5454; }
+
+#clock-countdown { margin: 0; }
+#clock-countdown .flip-clock-divider .flip-clock-label { display: none; }
+#clock-countdown ul li a div div.inn { background-color: #000; }
+
+#countdown-section .right-info { padding-top: 80px; float: right; width: calc(100% - 620px); height: 100%; }
+#countdown-section .right-info .right-image { margin-top: 30px; text-align: center; position: relative; }
+#countdown-section .right-info .right-image .big { width: 258px; height: 445px; object-fit: cover; }
+#countdown-section .right-info .right-image .small { width: 181px; height: 334px; object-fit: cover; position: absolute; left: 61%; top: 30%; }
 
 #top-nav { position: fixed; z-index: 9999; width: 100%; height: 95px; left: 0; top: 0; background-color: rgba(47, 46, 46, 0.6); border-top: 0px solid #2f2e2e; border-bottom: 0px solid #2f2e2e; }
 #top-nav > .container { height: 100%; }
@@ -41,3 +62,8 @@ img { max-width: 100%; height: auto; }
 #menu-home { top: 20px; left: 250px; right: 0px; position: absolute; margin: auto; z-index: 2; height: 50px; line-height: 50px; text-align: right; }
 #menu-home .nav-link { font-size: 15px; font-weight: normal; line-height: 1.4em; text-align: center; color: #ffffff; display: inline-block; vertical-align: middle; padding: 0 12px; }
 #menu-home .nav-link:hover { color: #ef5454; }
+
+#countdown-section .app { text-align: right; }
+#countdown-section .app-store, #countdown-section .google-play { display: inline-block; width: 132px; margin: 0 34px 0 -4px; color: #fff; }
+#countdown-section .app-store .title, #countdown-section .google-play .title { margin-bottom: 10px; text-align: center; }
+#countdown-section .google-play { margin-right: 0; }

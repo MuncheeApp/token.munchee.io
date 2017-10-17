@@ -11,14 +11,15 @@
     <!-- apply global -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <link rel="stylesheet" href="./lib/font_awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/flipclock/flipclock.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <!-- Javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="lib/flipclock/flipclock.min.js"></script>
 </head>
 
 <body class="home-p">
-<nav id="menu-mobile-left">
+<!--<nav id="menu-mobile-left">
     <ul class="clearfix">
         <li><a class="nav-link">HOME</a></li>
         <li><a class="nav-link">SOLUTION</a></li>
@@ -30,7 +31,7 @@
         <li><a class="nav-link">BLOG</a></li>
 
     </ul>
-</nav>
+</nav>-->
 <header>
     <div id="top-nav">
         <div class="container">
@@ -57,6 +58,47 @@
         <video loop="loop" preload="auto" class="mchee-video" id="mchee-video" autoplay="autoplay" poster="./assets/preview_video.png">
             <source src="./assets/munchee_video.mp4" type="video/mp4">
         </video>
+    </section>
+    <section id="countdown-section">
+        <div class="container clearfix">
+            <div class="left-info">
+                <h2 class="slogan">A DECENTRALIZED BLOCKCHAIN-BASED FOOD REVIEW SOCIAL MEDIA PLATFORM</h2>
+                <h3 class="date-detail">MUN token PRE-SALE starts on Oct 31, 2017</h3>
+                <div class="date-countdown">
+                    <div id="clock-countdown"></div>
+                    <ul class="date-section">
+                        <li>Days</li>
+                        <li>Hours</li>
+                        <li>Mins</li>
+                        <li>Secs</li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <a href="https://s3.amazonaws.com/munchee-docs/Munchee+White+Paper.pdf" 
+                        target="_blank" data-content="https://s3.amazonaws.com/munchee-docs/Munchee+White+Paper.pdf" data-type="external">
+                        Whitepaper</a>
+                    <a href="https://join.slack.com/t/muncheeplatform/shared_invite/enQtMjQzMzkxMDA1NDU3LWQyMmZlZGRlMDQ4ZWNjOGZhOGJhMzRmNjg5Yzc1MjI2OTViYTdhYzM5ZjQwZGExMjQ3NTYyMTk5ZWJhZGYyOTg" target="_blank" 
+                    data-content="https://join.slack.com/t/muncheeplatform/shared_invite/enQtMjQzMzkxMDA1NDU3LWQyMmZlZGRlMDQ4ZWNjOGZhOGJhMzRmNjg5Yzc1MjI2OTViYTdhYzM5ZjQwZGExMjQ3NTYyMTk5ZWJhZGYyOTg" 
+                     data-type="external">Join our Slack</a>
+                </div>
+            </div>
+            <div class="right-info">
+                <div class="app">
+                    <div class="app-store">
+                        <h4 class="title">Available now</h4>
+                        <div class="image"><img alt="" src="assets/store-apple.png"></div>
+                    </div>
+                    <div class="google-play">
+                        <h4 class="title">Coming soon</h4>
+                        <div class="image"><img alt="" src="assets/store-android.png"></div>
+                    </div>
+                </div>
+                <div class="right-image">
+                    <img class="big" alt="" src="assets/big_iphone.png">
+                    <img class="small" alt="" src="assets/small_iphone.png">
+                </div>
+            </div>
+        </div>
     </section>
 <footer>
 

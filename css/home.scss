@@ -5,10 +5,6 @@
     left: 0;
     height: 100%;
     z-index: -2;
-	overflow: hidden;
-	.container{
-		height: 100%;
-	}
 	.mchee-video{
 	    position: absolute;
 	    width: 100%;
@@ -26,6 +22,103 @@
 	    height: 100%; 
 	}
 }
+.date-countdown{
+    margin-bottom: 100px;
+}
+#countdown-section .left-info{
+    padding-top: 80px;
+    float: left;
+    width: 620px;
+    height: 100%;
+    color: #fff;
+    .container{
+		height: 100%;
+        top: 95px;
+	}
+    .slogan{
+        font-size: 23px;
+        letter-spacing: 0.2em;
+        margin: 0;
+    }
+    .date-detail{
+        font-size: 21px;
+        margin: 100px 0 30px 0;
+    }
+    .date-section{
+        height: 31px;
+        line-height: 31px;
+        font-size: 24px;
+        box-shadow: rgb(0, 0, 0) 0px 0px 12.1634px;
+        text-shadow: rgb(255, 255, 255) 0px 0px 2.43268px;
+        background: #000;
+        width: 610px;
+        margin: 17px 0 17px 5px;
+        li{
+            display: inline-block;
+            width: 25%;
+            margin: 0 0 0 -4px;
+            text-align: center;
+            &:nth-of-type(3){
+                padding-left: 14px;
+            }
+            &:nth-last-of-type(1){
+                padding-left: 24px;
+            }
+        }
+    }
+    .btn-group a{
+        width: 273px;
+        height: 62px;
+        line-height: 62px;
+        color: #fff;
+        font-size: 15px;
+        background-color: rgba(239, 84, 84, 1);
+        border: solid rgba(171, 5, 53, 1) 0px;
+        border-radius: 50px;
+        margin-right: 40px;
+        text-align: center;
+        transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+        &:hover{
+            background-color: rgba(255, 255, 255, 1);
+            border-color: rgba(239, 84, 84, 1);
+            color: rgba(239, 84, 84, 1);
+        }
+    }
+}
+#clock-countdown{
+    margin: 0;
+    .flip-clock-divider .flip-clock-label {
+        display: none;
+    }
+    ul li a div div.inn {
+        background-color: #000;
+    }
+}
+#countdown-section .right-info{
+    padding-top: 80px;
+    float: right;
+    width: calc(100% - 620px);
+    height: 100%;
+    .right-image{
+        margin-top: 30px;
+        text-align: center;
+        position: relative;
+        .big{
+            width: 258px;
+            height: 445px;
+            object-fit: cover;
+        }
+        .small{
+            width: 181px;
+            height: 334px;
+            object-fit: cover;
+            position: absolute;
+            left: 61%;
+            top: 30%;
+        }
+    }
+}
+
 #top-nav{
     position: fixed;
     z-index: 9999;
@@ -75,5 +168,25 @@
         &:hover{
             color: rgba(239, 84, 84, 1);
         }
+    }
+}
+
+#countdown-section{
+    .app{
+        text-align: right;
+    }
+    .app-store,
+    .google-play{
+        display: inline-block;
+        width: 132px;
+        margin: 0 34px 0 -4px;
+        color: #fff;
+        .title{
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    }
+    .google-play{
+        margin-right: 0;
     }
 }
