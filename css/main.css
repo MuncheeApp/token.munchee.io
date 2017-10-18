@@ -7,7 +7,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 html, body { width: 100%; height: 100%; margin: 0; }
 
-body { padding-top: 80px; font-size: 16px; font-family: 'Lato', sans-serif; font-weight: normal; text-rendering: optimizeLegibility !important; -webkit-font-smoothing: antialiased !important; }
+body { padding-top: 95px; font-size: 16px; font-family: 'Lato', sans-serif; font-weight: normal; text-rendering: optimizeLegibility !important; -webkit-font-smoothing: antialiased !important; }
 
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
@@ -27,14 +27,30 @@ img { max-width: 100%; height: auto; }
 
 .container { width: 980px; position: relative; }
 
-#banner-video { position: fixed; width: 100%; top: 0; left: 0; height: 100%; z-index: -2; }
+#banner-video { position: fixed; width: 100%; top: 0; left: 0; height: 100%; z-index: -2; overflow: hidden; }
 #banner-video .mchee-video { position: absolute; width: 100%; height: 100%; object-fit: cover; object-position: center center; }
 #banner-video .home-banner-img { display: none; background-image: url(../assets/preview_video.png); background-position: 0 0; background-size: cover; position: absolute; width: 100%; height: 100%; }
 
 .date-countdown { margin-bottom: 100px; }
 
+#top-nav { position: fixed; z-index: 9999; width: 100%; height: 95px; left: 0; top: 0; background-color: rgba(47, 46, 46, 0.6); border-top: 0px solid #2f2e2e; border-bottom: 0px solid #2f2e2e; }
+#top-nav > .container { height: 100%; }
+
+#logo-home { display: block; width: 195px; height: 50px; position: absolute; z-index: 1; left: 0; top: 22px; }
+#logo-home img { width: 100%; height: 100%; }
+
+#menu-home { top: 20px; left: 250px; right: 0px; position: absolute; margin: auto; z-index: 2; height: 50px; line-height: 50px; text-align: right; }
+#menu-home .nav-link { font-size: 15px; font-weight: normal; line-height: 1.4em; text-align: center; color: #ffffff; display: inline-block; vertical-align: middle; padding: 0 12px; }
+#menu-home .nav-link:hover { color: #ef5454; }
+
+/* Countdown section */
+#countdown-section > .container { height: 100%; }
+#countdown-section .app { text-align: right; }
+#countdown-section .app-store, #countdown-section .google-play { display: inline-block; width: 132px; margin: 0 34px 0 -4px; color: #fff; }
+#countdown-section .app-store .title, #countdown-section .google-play .title { margin-bottom: 10px; text-align: center; }
+#countdown-section .google-play { margin-right: 0; }
+
 #countdown-section .left-info { padding-top: 80px; float: left; width: 620px; height: 100%; color: #fff; }
-#countdown-section .left-info .container { height: 100%; top: 95px; }
 #countdown-section .left-info .slogan { font-size: 23px; letter-spacing: 0.2em; margin: 0; }
 #countdown-section .left-info .date-detail { font-size: 21px; margin: 100px 0 30px 0; }
 #countdown-section .left-info .date-section { height: 31px; line-height: 31px; font-size: 24px; box-shadow: black 0px 0px 12.1634px; text-shadow: white 0px 0px 2.43268px; background: #000; width: 610px; margin: 17px 0 17px 5px; }
@@ -53,17 +69,30 @@ img { max-width: 100%; height: auto; }
 #countdown-section .right-info .right-image .big { width: 258px; height: 445px; object-fit: cover; }
 #countdown-section .right-info .right-image .small { width: 181px; height: 334px; object-fit: cover; position: absolute; left: 61%; top: 30%; }
 
-#top-nav { position: fixed; z-index: 9999; width: 100%; height: 95px; left: 0; top: 0; background-color: rgba(47, 46, 46, 0.6); border-top: 0px solid #2f2e2e; border-bottom: 0px solid #2f2e2e; }
-#top-nav > .container { height: 100%; }
+/* youtube section */
+#youtube-section { padding: 106px 0; text-align: center; background: linear-gradient(to bottom, transparent 0%, white 100%); }
 
-#logo-home { display: block; width: 195px; height: 50px; position: absolute; z-index: 1; left: 0; top: 22px; }
-#logo-home img { width: 100%; height: 100%; }
+/* subscribe */
+#subscribe-section { padding: 106px 0; background: #ef5454; color: #fff; text-align: center; }
+#subscribe-section .title { font-size: 32px; margin: 0 0 50px 0; }
+#subscribe-section p { font-size: 17px; margin: 30px 0 0 0; }
+#subscribe-section .subscribe-field { width: 507px; margin: auto; }
+#subscribe-section .subscribe-field input { padding: 10px; background-color: white; color: #0E2E47; font-size: 16px; font-weight: 300; line-height: 20px; width: 296px; margin-right: 12px; border: 0; border-radius: 0; }
+#subscribe-section .subscribe-field input::placeholder { color: #000; }
 
-#menu-home { top: 20px; left: 250px; right: 0px; position: absolute; margin: auto; z-index: 2; height: 50px; line-height: 50px; text-align: right; }
-#menu-home .nav-link { font-size: 15px; font-weight: normal; line-height: 1.4em; text-align: center; color: #ffffff; display: inline-block; vertical-align: middle; padding: 0 12px; }
-#menu-home .nav-link:hover { color: #ef5454; }
+#subscribe-btn { background-color: #72b332 !important; border: 2px solid #72b332; border-color: #72b332; color: #fff; font-weight: bold; border-radius: 0; padding: 9px 24px; }
 
-#countdown-section .app { text-align: right; }
-#countdown-section .app-store, #countdown-section .google-play { display: inline-block; width: 132px; margin: 0 34px 0 -4px; color: #fff; }
-#countdown-section .app-store .title, #countdown-section .google-play .title { margin-bottom: 10px; text-align: center; }
-#countdown-section .google-play { margin-right: 0; }
+/* Current Problem */
+#current-problem-section { color: #fff; padding: 140px 0; background-image: url(../assets/current_problem_bg.png); background-size: cover; background-repeat: no-repeat; background-position: center center; }
+#current-problem-section > .container { padding: 20px 80px; }
+#current-problem-section .title { font-size: 25px; letter-spacing: 0.2em; text-align: center; margin-bottom: 50px; }
+#current-problem-section p { font-size: 17px; line-height: 1.6; letter-spacing: 0.05em; margin-bottom: 30px; }
+
+/* Solution */
+#solution-section { color: #fff; padding: 140px 0; background-image: url(../assets/solution_bg.png); background-size: cover; background-repeat: no-repeat; background-position: center center; text-align: center; }
+#solution-section .title { font-size: 25px; letter-spacing: 0.2em; text-align: center; margin-bottom: 30px; }
+#solution-section > p { font-size: 17px; line-height: 1.6; letter-spacing: 0.05em; margin-bottom: 30px; }
+#solution-section .solution-list { margin: 80px 0 0 0; }
+#solution-section .solution-list .item img { width: 126px; height: auto; margin: 25px auto; }
+#solution-section .solution-list .item .name { font-size: 20px; margin-bottom: 20px; }
+#solution-section .solution-list .item p { font-size: 15px; line-height: 1.6em; text-align: justify; letter-spacing: 0.05em; }

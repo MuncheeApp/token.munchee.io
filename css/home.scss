@@ -1,3 +1,4 @@
+
 #banner-video{
     position: fixed;
     width: 100%;
@@ -5,6 +6,7 @@
     left: 0;
     height: 100%;
     z-index: -2;
+    overflow: hidden;
 	.mchee-video{
 	    position: absolute;
 	    width: 100%;
@@ -25,16 +27,87 @@
 .date-countdown{
     margin-bottom: 100px;
 }
+
+#top-nav{
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 95px;
+    left: 0;
+    top: 0;
+    background-color: rgba(47, 46, 46, 0.6);
+    border-top: 0px solid rgba(47, 46, 46, 1);
+    border-bottom: 0px solid rgba(47, 46, 46, 1);
+    & > .container{
+        height: 100%;
+    }
+}
+#logo-home{
+    display: block;
+    width: 195px;
+    height: 50px;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 22px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+#menu-home{
+    top: 20px;
+    left: 250px;
+    right: 0px;
+    position: absolute;
+    margin: auto;
+    z-index: 2;
+    height: 50px;
+    line-height: 50px;
+    text-align: right;
+    .nav-link{
+        font-size: 15px;
+        font-weight: normal;
+        line-height: 1.4em;
+        text-align: center;
+        color: #ffffff;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0 12px;
+        &:hover{
+            color: rgba(239, 84, 84, 1);
+        }
+    }
+}
+/* Countdown section */
+#countdown-section{
+    & > .container{
+		height: 100%;
+	}
+    .app{
+        text-align: right;
+    }
+    .app-store,
+    .google-play{
+        display: inline-block;
+        width: 132px;
+        margin: 0 34px 0 -4px;
+        color: #fff;
+        .title{
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    }
+    .google-play{
+        margin-right: 0;
+    }
+}
 #countdown-section .left-info{
     padding-top: 80px;
     float: left;
     width: 620px;
     height: 100%;
     color: #fff;
-    .container{
-		height: 100%;
-        top: 95px;
-	}
     .slogan{
         font-size: 23px;
         letter-spacing: 0.2em;
@@ -118,75 +191,124 @@
         }
     }
 }
+/* youtube section */
+#youtube-section{
+    padding: 106px 0;
+    text-align: center;
+    background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(255, 255, 255, 1) 100%);
+}
 
-#top-nav{
-    position: fixed;
-    z-index: 9999;
-    width: 100%;
-    height: 95px;
-    left: 0;
-    top: 0;
-    background-color: rgba(47, 46, 46, 0.6);
-    border-top: 0px solid rgba(47, 46, 46, 1);
-    border-bottom: 0px solid rgba(47, 46, 46, 1);
+/* subscribe */
+#subscribe-section{
+    padding: 106px 0;
+    background: rgba(239, 84, 84, 1);
+    color: #fff;
+    text-align: center;
+    .title{
+        font-size: 32px;
+        margin: 0 0 50px 0;
+    }
+    p{
+        font-size: 17px;
+        margin: 30px 0 0 0;
+    }
+    .subscribe-field{
+        width: 507px;
+        margin: auto;
+        input{
+            padding: 10px;
+            background-color: rgba(255,255,255,1);
+            color: #0E2E47;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 20px;
+            width: 296px;
+            margin-right: 12px;
+            border: 0;
+            border-radius: 0;
+        }
+        input::placeholder{
+            color: #000;
+        }
+    }
+}
+#subscribe-btn {
+    background-color: rgba(114,179,50,1) !important;
+    border: 2px solid rgba(114,179,50,1);
+    border-color: rgba(114,179,50,1);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 0;
+    padding: 9px 24px;
+}
+
+/* Current Problem */
+#current-problem-section{
+    color: #fff;
+    padding: 140px 0;
+    background-image: url(../assets/current_problem_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     & > .container{
-        height: 100%;
+        padding: 20px 80px;
     }
-}
-#logo-home{
-    display: block;
-    width: 195px;
-    height: 50px;
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    top: 22px;
-    img{
-        width: 100%;
-        height: 100%;
-    }
-}
-#menu-home{
-    top: 20px;
-    left: 250px;
-    right: 0px;
-    position: absolute;
-    margin: auto;
-    z-index: 2;
-    height: 50px;
-    line-height: 50px;
-    text-align: right;
-    .nav-link{
-        font-size: 15px;
-        font-weight: normal;
-        line-height: 1.4em;
+    .title{
+        font-size: 25px;
+        letter-spacing: 0.2em;
         text-align: center;
-        color: #ffffff;
-        display: inline-block;
-        vertical-align: middle;
-        padding: 0 12px;
-        &:hover{
-            color: rgba(239, 84, 84, 1);
-        }
+        margin-bottom: 50px;
+    }
+    p{
+        font-size: 17px;
+        line-height: 1.6;
+        letter-spacing: 0.05em;
+        margin-bottom: 30px;
     }
 }
 
-#countdown-section{
-    .app{
-        text-align: right;
+/* Solution */
+#solution-section{
+    color: #fff;
+    padding: 140px 0;
+    background-image: url(../assets/solution_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    .title{
+        font-size: 25px;
+        letter-spacing: 0.2em;
+        text-align: center;
+        margin-bottom: 30px;
     }
-    .app-store,
-    .google-play{
-        display: inline-block;
-        width: 132px;
-        margin: 0 34px 0 -4px;
-        color: #fff;
-        .title{
-            margin-bottom: 10px;
-            text-align: center;
+    & > p{
+        font-size: 17px;
+        line-height: 1.6;
+        letter-spacing: 0.05em;
+        margin-bottom: 30px;
+    }
+    .solution-list{
+        margin: 80px 0 0 0;
+        .item{
+            img{
+                width: 126px;
+                height: auto;
+                margin: 25px auto;
+            }
+            .name{
+               font-size: 20px;
+               margin-bottom: 20px;
+            }
+            p{
+                font-size: 15px;
+                line-height: 1.6em;
+                text-align: justify;
+                letter-spacing: 0.05em;
+            }
         }
-    }
-    .google-play{
-        margin-right: 0;
     }
 }
