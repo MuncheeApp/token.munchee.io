@@ -138,3 +138,36 @@ img{
     width: 980px;
     position: relative;
 }
+.app{
+    .app-store,
+    .google-play{
+        display: inline-block;
+        width: 132px;
+        margin: 0 34px 0 -4px;
+        color: #fff;
+        .title{
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    }
+    .google-play{
+        margin-right: 0;
+    }
+}
+.btn-bg_pink-text_white{
+    min-width: 50px;
+    min-height: 30px;
+    font-size: 15px;
+    color: #fff;
+    background-color: rgba(239, 84, 84, 1);
+    border: solid rgba(171, 5, 53, 1) 0px;
+    border-radius: 50px;
+    margin-right: 40px;
+    text-align: center;
+    transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+    &:hover{
+        background-color: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(239, 84, 84, 1);
+        color: rgba(239, 84, 84, 1);
+    }
+}

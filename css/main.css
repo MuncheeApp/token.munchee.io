@@ -27,6 +27,13 @@ img { max-width: 100%; height: auto; }
 
 .container { width: 980px; position: relative; }
 
+.app .app-store, .app .google-play { display: inline-block; width: 132px; margin: 0 34px 0 -4px; color: #fff; }
+.app .app-store .title, .app .google-play .title { margin-bottom: 10px; text-align: center; }
+.app .google-play { margin-right: 0; }
+
+.btn-bg_pink-text_white { min-width: 50px; min-height: 30px; font-size: 15px; color: #fff; background-color: #ef5454; border: solid #ab0535 0px; border-radius: 50px; margin-right: 40px; text-align: center; transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s; }
+.btn-bg_pink-text_white:hover { background-color: white; border: 1px solid #ef5454; color: #ef5454; }
+
 #banner-video { position: fixed; width: 100%; top: 0; left: 0; height: 100%; z-index: -2; overflow: hidden; }
 #banner-video .mchee-video { position: absolute; width: 100%; height: 100%; object-fit: cover; object-position: center center; }
 #banner-video .home-banner-img { display: none; background-image: url(../assets/preview_video.png); background-position: 0 0; background-size: cover; position: absolute; width: 100%; height: 100%; }
@@ -46,9 +53,6 @@ img { max-width: 100%; height: auto; }
 /* Countdown section */
 #countdown-section > .container { height: 100%; }
 #countdown-section .app { text-align: right; }
-#countdown-section .app-store, #countdown-section .google-play { display: inline-block; width: 132px; margin: 0 34px 0 -4px; color: #fff; }
-#countdown-section .app-store .title, #countdown-section .google-play .title { margin-bottom: 10px; text-align: center; }
-#countdown-section .google-play { margin-right: 0; }
 
 #countdown-section .left-info { padding-top: 80px; float: left; width: 620px; height: 100%; color: #fff; }
 #countdown-section .left-info .slogan { font-size: 23px; letter-spacing: 0.2em; margin: 0; }
@@ -57,8 +61,7 @@ img { max-width: 100%; height: auto; }
 #countdown-section .left-info .date-section li { display: inline-block; width: 25%; margin: 0 0 0 -4px; text-align: center; }
 #countdown-section .left-info .date-section li:nth-of-type(3) { padding-left: 14px; }
 #countdown-section .left-info .date-section li:nth-last-of-type(1) { padding-left: 24px; }
-#countdown-section .left-info .btn-group a { width: 273px; height: 62px; line-height: 62px; color: #fff; font-size: 15px; background-color: #ef5454; border: solid #ab0535 0px; border-radius: 50px; margin-right: 40px; text-align: center; transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s; }
-#countdown-section .left-info .btn-group a:hover { background-color: white; border-color: #ef5454; color: #ef5454; }
+#countdown-section .left-info .btn-bg_pink-text_white { width: 273px; height: 62px; line-height: 62px; }
 
 #clock-countdown { margin: 0; }
 #clock-countdown .flip-clock-divider .flip-clock-label { display: none; }
@@ -88,7 +91,7 @@ img { max-width: 100%; height: auto; }
 #current-problem-section .title { font-size: 25px; letter-spacing: 0.2em; text-align: center; margin-bottom: 50px; }
 #current-problem-section p { font-size: 17px; line-height: 1.6; letter-spacing: 0.05em; margin-bottom: 30px; }
 
-/* Solution */
+/* Solution section */
 #solution-section { color: #fff; padding: 140px 0; background-image: url(../assets/solution_bg.png); background-size: cover; background-repeat: no-repeat; background-position: center center; text-align: center; }
 #solution-section .title { font-size: 25px; letter-spacing: 0.2em; text-align: center; margin-bottom: 30px; }
 #solution-section > p { font-size: 17px; line-height: 1.6; letter-spacing: 0.05em; margin-bottom: 30px; }
@@ -96,3 +99,25 @@ img { max-width: 100%; height: auto; }
 #solution-section .solution-list .item img { width: 126px; height: auto; margin: 25px auto; }
 #solution-section .solution-list .item .name { font-size: 20px; margin-bottom: 20px; }
 #solution-section .solution-list .item p { font-size: 15px; line-height: 1.6em; text-align: justify; letter-spacing: 0.05em; }
+
+/* live product section */
+#live-product-section { background: #fff; padding: 106px 0; text-align: center; }
+#live-product-section h2.title { font-size: 25px; letter-spacing: 0.2em; text-align: center; margin-bottom: 25px; color: #ef5454; }
+#live-product-section p { color: #0E2E47; font-size: 17px; letter-spacing: 0.05em; text-align: center; }
+#live-product-section .app { margin-top: 30px; }
+#live-product-section .app .title { font-size: 17px; color: #0E2E47; letter-spacing: 0.05em; margin-bottom: 10px; }
+#live-product-section .btn-bg_pink-text_white { width: 325px; height: 47px; line-height: 47px; display: block; margin: 40px auto; }
+
+#live-product-section .showcase { margin-top: 80px; padding: 0 30px; }
+#live-product-section .showcase .case { height: 574px; width: 100%; position: relative; }
+#live-product-section .showcase .case .info { position: absolute; top: 0; width: calc(100% - 320px); height: 100%; display: table; }
+#live-product-section .showcase .case .info .wrap { width: 480px; display: table-cell; vertical-align: middle; text-align: left; }
+#live-product-section .showcase .case .info .wrap p { font-size: 23px; font-weight: 300; text-align: left; letter-spacing: 0; display: inline-block; }
+#live-product-section .showcase .case .image { width: 320px; position: absolute; top: 0; text-align: center; }
+#live-product-section .showcase .case .image.overlap { width: 233px; z-index: 1; }
+#live-product-section .showcase .case:nth-of-type(odd) .info { left: 0; }
+#live-product-section .showcase .case:nth-of-type(odd) .image { right: 0; }
+#live-product-section .showcase .case:nth-of-type(odd) .image.overlap { top: 33%; right: -50px; }
+#live-product-section .showcase .case:nth-of-type(even) .info { right: 25px; }
+#live-product-section .showcase .case:nth-of-type(even) .image { left: -25px; }
+#live-product-section .showcase .case:nth-of-type(even) .wrap { text-align: right; }
