@@ -383,3 +383,233 @@
         }
     }
 }
+
+/* Token model */
+#token-model-section{
+    background: rgba(47, 46, 46, 1);
+    color: #fff;
+    padding: 106px 0;
+    .title{
+        margin-bottom: 50px;
+    }
+    .token-desc{
+        font-size: 17px;
+        letter-spacing: 0.05em;
+        max-width: 700px;
+        margin: auto;
+    }
+    .token:nth-of-type(1) .token-desc{
+        text-align: left;
+        margin-top: 150px;
+        margin-left: 15px;
+    }
+    .token:nth-of-type(2) .token-desc{
+        text-align: center;
+        margin-top: 50px;
+    }
+    figure{
+        text-align: center;
+        margin: 30px 0;
+    }
+    figcaption{
+        padding: 30px 0;
+        text-align: center;
+        p{
+            line-height: 1.6em;
+            font-size: 14px;
+            font-style: italic;
+            letter-spacing: 0.05em;
+        }
+    }
+}
+
+/* Funding */
+#funding-section{
+    padding: 106px 0;
+    background:#fff;
+    h2.title{
+        color: rgb(239, 84, 84);
+        margin-bottom: 50px;
+    }
+    p.intro{
+        color: #0E2E47;
+        text-align: center;
+        padding: 0 15px;
+    }
+    .chart-overview{
+        margin-top: 50px;
+        ul{
+            list-style: none;
+        }
+        .chart-desc{
+            padding-top: 120px;
+        }
+        .icon{
+            display: inline-block;
+            vertical-align: top;
+            width: 32px;
+            margin-top: 6px;
+        }
+        .data{
+            font-size: 13px;
+            color: #0E2E47;
+            display: inline-block;
+            vertical-align: middle;
+            width: calc(100% - 32px);
+            margin-left: -4px;
+            margin-bottom: 20px;
+            padding-left: 26px;
+        }
+    }
+}
+
+/* Road map */
+#roadmap-section{
+    background: rgba(47, 46, 46, 1);
+    color: #fff;
+    padding: 106px 0;
+    h2.title{
+        margin-bottom: 80px;
+    }
+}
+.timeline-roadmap{
+    position: relative;
+    .vertical-line{
+        height: 100%;
+        width: 2px;
+        position: absolute;
+        left: calc(50% - 1px);
+        background: #fff;
+    }
+    .event{
+        position: relative;
+        min-height: 140px;
+        &.event-happened .icon{
+            width: 36px;
+            height: 36px;
+            background-image: url(../assets/check.png);
+            background-size: contain;
+            background-position: 0 0 ;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: calc(50% - 18px);
+        }
+        &.event-happening .icon{
+            width: 42px;
+            height: 42px;
+            border: 4px solid #fff;
+            border-radius: 50%;
+            background-image: url(../assets/event_happening.png);
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: calc(50% - 21px);
+        }
+        &.event-unhappened .icon{
+            width: 22px;
+            height: 22px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            background: #fff;
+            position: absolute;
+            left: calc(50% - 11px);
+        }
+        .info{
+            width: 50%;
+            position: absolute;
+            .event-time{
+                font-size: 25px;
+                letter-spacing: 0.2em;
+                margin-bottom: 15px;
+            }
+            p{
+                font-size: 17px;
+                font-weight: 300;
+                letter-spacing: 0.05em;
+                line-height: 1.5;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .event:nth-of-type(2n){
+        .info{
+            left: 0;
+            text-align: right;
+            padding-right: 45px;
+        }
+    }
+    .event:nth-of-type(2n+1){
+        .info{
+            right: 0;
+            text-align: left;
+            padding-left: 45px;
+        }
+    }
+}
+
+/* Our team */
+#team-section{
+    background: #fff;
+    padding: 106px 0;
+    color: #2F2E2E;
+    h2.title{
+        color: rgb(239, 84, 84);
+        margin-bottom: 100px;
+    }
+    .roster{
+        margin-bottom: 60px;
+    }
+    .member{
+        color: #0E2E47;
+        .title{
+            font-family: 'Helvetica', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 1.4em;
+            text-align: center;
+            margin: 12px 0 0 0;
+        }
+        .linkedin{
+            display: block;
+            width: 38px;
+            height: 38px;
+            margin: 8px auto 12px auto;
+            background-image: url(../assets/linkedin.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .info{
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.4em;
+            letter-spacing: 0.05em;
+            text-align: justify;
+        }
+    }
+    .roster .member:nth-of-type(2){
+        margin-top: -60px;
+    }
+    .roster:nth-last-of-type(1){
+        margin-bottom: 0;
+        .member{
+            margin: -60px auto 0 auto;
+        }
+    }
+}
+
+/* Partner */
+#partner{
+    background:rgba(232, 232, 232, 1);
+    padding: 80px 0;
+    h2.title{
+        color: rgb(239, 84, 84);
+    }
+    .image{
+        padding: 80px 0;
+        text-align: center;
+        img{
+            width: 308px;
+        }
+    }
+}

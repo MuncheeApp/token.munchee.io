@@ -31,6 +31,10 @@ img { max-width: 100%; height: auto; }
 .app .app-store .title, .app .google-play .title { margin-bottom: 10px; text-align: center; }
 .app .google-play { margin-right: 0; }
 
+h2.title { font-size: 25px; letter-spacing: 0.2em; text-align: center; margin-bottom: 25px; }
+
+p.intro { font-size: 17px; letter-spacing: 0.05em; }
+
 .btn-bg_pink-text_white { min-width: 50px; min-height: 30px; font-size: 15px; color: #fff; background-color: #ef5454; border: solid #ab0535 0px; border-radius: 50px; margin-right: 40px; text-align: center; transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s; }
 .btn-bg_pink-text_white:hover { background-color: white; border: 1px solid #ef5454; color: #ef5454; }
 
@@ -121,3 +125,57 @@ img { max-width: 100%; height: auto; }
 #live-product-section .showcase .case:nth-of-type(even) .info { right: 25px; }
 #live-product-section .showcase .case:nth-of-type(even) .image { left: -25px; }
 #live-product-section .showcase .case:nth-of-type(even) .wrap { text-align: right; }
+
+/* Token model */
+#token-model-section { background: #2f2e2e; color: #fff; padding: 106px 0; }
+#token-model-section .title { margin-bottom: 50px; }
+#token-model-section .token-desc { font-size: 17px; letter-spacing: 0.05em; max-width: 700px; margin: auto; }
+#token-model-section .token:nth-of-type(1) .token-desc { text-align: left; margin-top: 150px; margin-left: 15px; }
+#token-model-section .token:nth-of-type(2) .token-desc { text-align: center; margin-top: 50px; }
+#token-model-section figure { text-align: center; margin: 30px 0; }
+#token-model-section figcaption { padding: 30px 0; text-align: center; }
+#token-model-section figcaption p { line-height: 1.6em; font-size: 14px; font-style: italic; letter-spacing: 0.05em; }
+
+/* Funding */
+#funding-section { padding: 106px 0; background: #fff; }
+#funding-section h2.title { color: #ef5454; margin-bottom: 50px; }
+#funding-section p.intro { color: #0E2E47; text-align: center; padding: 0 15px; }
+#funding-section .chart-overview { margin-top: 50px; }
+#funding-section .chart-overview ul { list-style: none; }
+#funding-section .chart-overview .chart-desc { padding-top: 120px; }
+#funding-section .chart-overview .icon { display: inline-block; vertical-align: top; width: 32px; margin-top: 6px; }
+#funding-section .chart-overview .data { font-size: 13px; color: #0E2E47; display: inline-block; vertical-align: middle; width: calc(100% - 32px); margin-left: -4px; margin-bottom: 20px; padding-left: 26px; }
+
+/* Road map */
+#roadmap-section { background: #2f2e2e; color: #fff; padding: 106px 0; }
+#roadmap-section h2.title { margin-bottom: 80px; }
+
+.timeline-roadmap { position: relative; }
+.timeline-roadmap .vertical-line { height: 100%; width: 2px; position: absolute; left: calc(50% - 1px); background: #fff; }
+.timeline-roadmap .event { position: relative; min-height: 140px; }
+.timeline-roadmap .event.event-happened .icon { width: 36px; height: 36px; background-image: url(../assets/check.png); background-size: contain; background-position: 0 0; background-repeat: no-repeat; position: absolute; left: calc(50% - 18px); }
+.timeline-roadmap .event.event-happening .icon { width: 42px; height: 42px; border: 4px solid #fff; border-radius: 50%; background-image: url(../assets/event_happening.png); background-size: contain; background-position: center center; background-repeat: no-repeat; position: absolute; left: calc(50% - 21px); }
+.timeline-roadmap .event.event-unhappened .icon { width: 22px; height: 22px; border: 1px solid #fff; border-radius: 50%; background: #fff; position: absolute; left: calc(50% - 11px); }
+.timeline-roadmap .event .info { width: 50%; position: absolute; }
+.timeline-roadmap .event .info .event-time { font-size: 25px; letter-spacing: 0.2em; margin-bottom: 15px; }
+.timeline-roadmap .event .info p { font-size: 17px; font-weight: 300; letter-spacing: 0.05em; line-height: 1.5; margin-bottom: 15px; }
+.timeline-roadmap .event:nth-of-type(2n) .info { left: 0; text-align: right; padding-right: 45px; }
+.timeline-roadmap .event:nth-of-type(2n+1) .info { right: 0; text-align: left; padding-left: 45px; }
+
+/* Our team */
+#team-section { background: #fff; padding: 106px 0; color: #2F2E2E; }
+#team-section h2.title { color: #ef5454; margin-bottom: 100px; }
+#team-section .roster { margin-bottom: 60px; }
+#team-section .member { color: #0E2E47; }
+#team-section .member .title { font-family: 'Helvetica', sans-serif; font-size: 16px; font-weight: bold; line-height: 1.4em; text-align: center; margin: 12px 0 0 0; }
+#team-section .member .linkedin { display: block; width: 38px; height: 38px; margin: 8px auto 12px auto; background-image: url(../assets/linkedin.png); background-size: 100% 100%; background-repeat: no-repeat; }
+#team-section .member .info { font-size: 14px; font-weight: 300; line-height: 1.4em; letter-spacing: 0.05em; text-align: justify; }
+#team-section .roster .member:nth-of-type(2) { margin-top: -60px; }
+#team-section .roster:nth-last-of-type(1) { margin-bottom: 0; }
+#team-section .roster:nth-last-of-type(1) .member { margin: -60px auto 0 auto; }
+
+/* Partner */
+#partner { background: #e8e8e8; padding: 80px 0; }
+#partner h2.title { color: #ef5454; }
+#partner .image { padding: 80px 0; text-align: center; }
+#partner .image img { width: 308px; }
