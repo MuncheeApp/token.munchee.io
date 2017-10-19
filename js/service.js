@@ -7,9 +7,27 @@ $(function(){
         clockFace: 'DailyCounter',
         countdown: true
     });
-
+        var a = -80;
+        var num = 2;
+        var oldScrollTop = 0;
+        var scrollTop
     $(window).scroll(function() {
-        var scrollTop = $(this).scrollTop();
+        oldScrollTop = scrollTop;
+        scrollTop = $(this).scrollTop();
+        if(scrollTop < oldScrollTop){}
+        else if(scrollTop > $('#subscribe-bottom-section').offset().top){
+            a = 0;
+            $("#subscribe-bottom-section").css("background-position","center"+" "+a+"px");
+        }else if(scrollTop < $('#subscribe-bottom-section').offset().top - 500 ){
+            a = -80;
+             $("#subscribe-bottom-section").css("background-position","center"+" "+a+"px");
+        }else{
+             if(a < 0){
+                 a = a + (($('#subscribe-bottom-section').offset().top - scrollTop) / 5);
+             }
+             $("#subscribe-bottom-section").css("background-position","center"+" "+a+"px");
+        }
+
         $('#youtube-section').css({
             opacity: function() {
             var elementHeight = $(this).height();

@@ -175,7 +175,22 @@ p.intro { font-size: 17px; letter-spacing: 0.05em; }
 #team-section .roster:nth-last-of-type(1) .member { margin: -60px auto 0 auto; }
 
 /* Partner */
-#partner { background: #e8e8e8; padding: 80px 0; }
-#partner h2.title { color: #ef5454; }
-#partner .image { padding: 80px 0; text-align: center; }
-#partner .image img { width: 308px; }
+#partner-section { background: #e8e8e8; padding: 80px 0; }
+#partner-section h2.title { color: #ef5454; }
+#partner-section .image { padding: 80px 0; text-align: center; }
+#partner-section .image img { width: 308px; }
+
+/* Recognition */
+#recognition-section { background: #fff; padding: 80px 0; }
+#recognition-section h2.title { color: #ef5454; margin-bottom: 60px; }
+#recognition-section .article-wrapper { border: 0px solid #e8e8e8; background-color: transparent; border-radius: 10px; box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.6); padding: 10px; height: 393px; overflow-y: hidden; margin-bottom: 50px; }
+#recognition-section .article-wrapper .image-section { text-align: center; height: 47px; padding: 0 0 10px 0; overflow: hidden; }
+#recognition-section .article-wrapper .image-section img { height: 100%; width: auto; }
+#recognition-section .article-wrapper .image-hero { width: calc(100% + 20px); margin-left: -10px; height: 157px; object-fit: contain; overflow: hidden; }
+#recognition-section .article-wrapper .image-hero img { height: 100%; }
+#recognition-section .article-wrapper .title { font-family: 'Helvetica',sans-serif; font-weight: bold; font-size: 18px; color: #2F2E2E; margin: 18px 0; height: 80px; overflow-y: hidden; }
+#recognition-section .article-wrapper a { width: 142px; height: 40px; line-height: 40px; display: block; margin: 10px auto; }
+#recognition-section .organization { margin: 30px 0; }
+#recognition-section .organization .item { height: 40px; }
+
+#subscribe-bottom-section { height: 400px; width: 100%; background-image: url(../assets/bottom_bg.png); background-attachment: fixed; background-repeat: no-repeat; background-position: center -80px; background-size: cover; }

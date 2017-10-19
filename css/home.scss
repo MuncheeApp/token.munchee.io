@@ -599,7 +599,7 @@
 }
 
 /* Partner */
-#partner{
+#partner-section{
     background:rgba(232, 232, 232, 1);
     padding: 80px 0;
     h2.title{
@@ -613,3 +613,75 @@
         }
     }
 }
+
+/* Recognition */
+#recognition-section{
+    background:#fff;
+    padding: 80px 0;
+    h2.title{
+        color: rgb(239, 84, 84);
+        margin-bottom: 60px;
+    }
+    .article-wrapper{
+        border: 0px solid rgba(232, 232, 232, 1);
+        background-color: transparent;
+        border-radius: 10px;
+        box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.6);
+        padding: 10px;
+        height: 393px;
+        overflow-y: hidden;
+        margin-bottom: 50px;
+        .image-section{
+            text-align: center;
+            height: 47px;
+            padding: 0 0 10px 0;
+            overflow: hidden;
+            img{
+                height: 100%;
+                width: auto;
+            }
+        }
+        .image-hero{
+            width: calc(100% + 20px);
+            margin-left: -10px;
+            height: 157px;
+            object-fit: contain;
+            overflow: hidden;
+            img{
+                height: 100%;
+            }
+        }
+        .title{
+            font-family: 'Helvetica',sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+            color: #2F2E2E;
+            margin: 18px 0;
+            height: 80px;
+            overflow-y: hidden;
+        }
+        a {
+            width: 142px;
+            height: 40px;
+            line-height: 40px;
+            display: block;
+            margin: 10px auto;
+        }
+    }
+    .organization{
+        margin: 30px 0;
+        .item{
+            height: 40px;
+        }
+    }
+}
+
+#subscribe-bottom-section{
+    height: 400px;
+    width: 100%;
+    background-image: url(../assets/bottom_bg.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center -80px;
+    background-size: cover;
+} 
