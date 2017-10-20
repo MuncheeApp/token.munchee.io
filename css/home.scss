@@ -677,11 +677,85 @@
 }
 
 #subscribe-bottom-section{
-    height: 400px;
+    position: relative;
+    padding: 120px 0;
     width: 100%;
-    background-image: url(../assets/bottom_bg.png);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center -80px;
-    background-size: cover;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    .title{
+        font-size: 32px;
+        margin: 0 0 50px 0;
+    }
+    .subscribe-field{
+        width: 507px;
+        margin: auto;
+        input{
+            padding: 10px;
+            background-color: rgba(255,255,255,1);
+            color: #0E2E47;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 20px;
+            width: 296px;
+            margin-right: 12px;
+            border: 0;
+            border-radius: 0;
+        }
+        input::placeholder{
+            color: #000;
+        }
+    }
+    .parallax{
+        width: 100%;
+        background-size: cover;
+        background-image: url(../assets/bottom_bg.png);
+        background-size: cover;
+        background-position: center -200px;
+        position: absolute;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+        transition: background-position 0.3s ease;
+    }
 } 
+#subscribe-bottom-btn {
+    background-color: rgb(239, 84, 84);
+    border: 2px solid rgb(239, 84, 84);
+    border-color: rgb(239, 84, 84);
+    color: #fff;
+    border-radius: 0;
+    padding: 9px 16px;
+}
+
+#social-media-vertical-list{
+    position: fixed;
+    right: 35px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 26px;
+    z-index: 100;
+    list-style: none;
+    li{
+        margin-bottom: 10px;
+    }
+}
+#social-media-horizontal-list{
+    list-style: none;
+    margin: 40px 0 20px 0;
+    li{
+        display: inline-block;
+        margin: 0 15px 0 -4px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        width: 26px;
+        height: 26px;
+        line-height: 22px;
+        text-align: center;
+        img{
+            max-width: 18px;
+        }
+    }
+}

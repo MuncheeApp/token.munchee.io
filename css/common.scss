@@ -181,3 +181,27 @@ p.intro{
         color: rgba(239, 84, 84, 1);
     }
 }
+footer{
+    text-align: center;
+    height: 66px;
+    font-weight: 300;
+    color: #fff;
+    background: #000;
+    display: table;
+    width: 100%;
+    .container{
+        display: table-cell;
+        vertical-align: middle;
+    }
+    p{
+        font-size: 14px;
+        line-height: 1.4em;
+    }
+}
+.os-animation{
+  opacity: 0;
+}
+
+.os-animation.animated{
+    opacity: 1;
+}

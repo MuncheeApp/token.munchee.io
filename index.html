@@ -12,11 +12,12 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="lib/flipclock/flipclock.css" />
+    <link rel="stylesheet" type="text/css" href="lib/animation/animate.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <!-- Javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="lib/flipclock/flipclock.min.js"></script>
-    <script src="lib/waypoint/noframework.waypoints.min.js"></script>
+    <script src="lib/waypoint/jquery.waypoints.min.js"></script>
 </head>
 
 <body class="home-p">
@@ -56,7 +57,7 @@
 <main id="main">
     <section id="banner-video">
         <div class="home-banner-img"></div>
-        <video loop="loop" preload="auto" class="mchee-video" id="mchee-video" autoplay="autoplay" poster="./assets/preview_video.png">
+        <video preload="auto" class="mchee-video" id="mchee-video" autoplay="autoplay" poster="./assets/preview_video.png">
             <source src="./assets/munchee_video.mp4" type="video/mp4">
         </video>
     </section>
@@ -108,7 +109,7 @@
         <div class="container">
             <h2 class="title">Join Our Whitelist</h2>
             <div class="subscribe-field input-group">
-                <input type="search" name="" id="join our whitelist munchee" 
+                <input type="search" name="" id="join-munchee-top" 
                     class="form-control top-search-field" value=""  title="" placeholder="Email Address">
                 <a id="subscribe-btn" class="btn">Subscribe Now</a>
             </div>
@@ -119,11 +120,11 @@
         <div class="container">
             <h2 class="title">CURRENT PROBLEMS</h2>
             <ul>
-                <li><p>With current centralized platforms operated by Yelp, FourSquare, etc., it is impossible to prove that there is no 
+                <li class="os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.3s"><p>With current centralized platforms operated by Yelp, FourSquare, etc., it is impossible to prove that there is no 
                     review manipulation and there is truth in the review and rating system.</p></li>
-                <li><p>Due to the lack of incentive for the standard end-users, those who have neutral or positive experiences are far 
+                <li class="os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.5s"><p>Due to the lack of incentive for the standard end-users, those who have neutral or positive experiences are far 
                     less likely to post reviews than those who have negative experiences.</p></li>
-                <li><p>Consumers and business owners are charged exorbitant amounts in terms of interest rates, fees and surcharge for 
+                <li class="os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.8s"><p>Consumers and business owners are charged exorbitant amounts in terms of interest rates, fees and surcharge for 
                     their services by existing centralized financial networks such as VISA, Mastercard etc.</p></li>
             </ul>
         </div>
@@ -133,21 +134,21 @@
             <h2 class="title">MUNCHEE'S SOLUTIONS</h2>
             <p>Munchee is building a Blockchain-based incentivized food review platform.</p>
             <div class="solution-list row">
-                <div class="col-md-4 item">
+                <div class="col-md-4 item os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3s">
                     <figure>
                         <img src="assets/platform.png" alt="">
                         <h3 class="name">DECENTRALIZED PLATFORM</h3>
                         <p>Providing high-quality reviews and preventing review manipulation with peer-reviewed system</p>
                     </figure>
                 </div>
-                <div class="col-md-4 item">
+                <div class="col-md-4 item os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.5s">
                     <figure>
                         <img src="assets/reward.png" alt="">
                         <h3 class="name">REWARDS</h3>
                         <p>Rewarding users with MUN tokens, which can be exchanged for food & services at our partner restaurants.</p>
                     </figure>
                 </div>
-                 <div class="col-md-4 item">
+                 <div class="col-md-4 item os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.8s">
                     <figure>
                         <img src="assets/nomore_middlemen.png" alt="">
                         <h3 class="name">NO MORE MIDDLEMEN</h3>
@@ -175,45 +176,45 @@
             <a href="" class="btn-bg_pink-text_white">See Our Pitch Deck</a>
             <div class="showcase">
                 <div class="case">
-                    <div class="image">
+                    <div class="image os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0.3s">
                         <img alt="" src="assets/phone1.png">
                     </div>
-                    <div class="info">
+                    <div class="info os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.3s">
                         <div class="wrap"><p>Learn what's good with real time food feed</p></div>
                     </div>
                 </div>
                 <div class="case">
-                    <div class="image">
+                    <div class="image os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.3s">
                         <img alt="" src="assets/phone2.png">
                     </div>
-                    <div class="info">
+                    <div class="info os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0.3s">
                         <div class="wrap"><p>Create your own food collections and<br>"Pin" down your favourite dishes</p></div>
                     </div>
                 </div>
                 <div class="case">
-                    <div class="image">
+                    <div class="image os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0.3s">
                         <img alt="" src="assets/phone3.png">
                     </div>
-                    <div class="info">
+                    <div class="info os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.3s">
                         <div class="wrap"><p>Satisfy your cravings with informative <br>visual search results</p></div>
                     </div>
                 </div>
                 <div class="case">
-                    <div class="image">
+                    <div class="image os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.3s">
                         <img alt="" src="assets/phone4.png">
                     </div>
-                    <div class="info">
+                    <div class="info os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0.3s">
                         <div class="wrap"><p>Snap a food picture. Review and share <br>it with other foodies</p></div>
                     </div>
                 </div>
                 <div class="case">
-                    <div class="image">
+                    <div class="image os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0.3s">
                         <img alt="" src="assets/phone5.png">
                     </div>
-                    <div class="image overlap">
+                    <div class="image overlap os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0.3s">
                         <img alt="" src="assets/phone6.png">
                     </div>
-                    <div class="info">
+                    <div class="info os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.3s"">
                         <div class="wrap"><p>Be a food influencer and get rewards<br> with our existing in-app reward system!</p></div>
                     </div>
                 </div>
@@ -294,35 +295,35 @@
                 <div class="vertical-line"></div>
                 <div class="event event-happened">
                     <div class="icon"></div>
-                    <div class="info">
+                    <div class="info os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                         <h2 class="event-time">Q4 2015</h2>
                         <p>Company registered and development began.</p>
                     </div>
                 </div>
                 <div class="event event-happened">
                     <div class="icon"></div>
-                    <div class="info">
+                    <div class="info os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                         <h2 class="event-time">Q4 2016</h2>
                         <p>Private beta launched.</p>
                     </div>
                 </div>
                 <div class="event event-happened">
                     <div class="icon"></div>
-                    <div class="info">
+                    <div class="info os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                         <h2 class="event-time">Q1 2017</h2>
                         <p>Public beta launched.</p>
                     </div>
                 </div>
                 <div class="event event-happened">
                     <div class="icon"></div>
-                    <div class="info">
+                    <div class="info os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                         <h2 class="event-time">Q2 2017</h2>
                         <p>Munchee app officially launched on iOS app store for the U.S.</p>
                     </div>
                 </div>
                 <div class="event event-happening">
                     <div class="icon"></div>
-                    <div class="info">
+                    <div class="info os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                         <h2 class="event-time">Q4 2017</h2>
                         <p>Cryptotoken planning and issuance.</p>
                         <p>Cryptotoken pre-sale and sale event.</p>
@@ -330,7 +331,7 @@
                 </div>
                  <div class="event event-unhappened">
                     <div class="icon"></div>
-                    <div class="info">
+                    <div class="info os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                         <h2 class="event-time">Q2 2018</h2>
                         <p>Improve Munchee mobile app backend and restaurant database.</p>
                         <p>Enhance UX/UI of the app and adding new features.</p>
@@ -338,7 +339,7 @@
                 </div>
                  <div class="event event-unhappened">
                     <div class="icon"></div>
-                    <div class="info">
+                    <div class="info os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                         <h2 class="event-time">Q3 2018</h2>
                         <p>Begin development of Smart contract on Ethereum Blockchain network–integration of in-app MUN Token.</p>
                         <p>Launch user acquisition and marketing campaigns - focusing on the American and Asian markets while growing user base worldwide.</p>
@@ -346,7 +347,7 @@
                 </div>
                  <div class="event event-unhappened">
                     <div class="icon"></div>
-                    <div class="info">
+                    <div class="info os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                         <h2 class="event-time">Q4 2018</h2>
                         <p>Start of development of second Smart contract to record fingerprint of reviews on Ethereum Blockchain network.</p>
                         <p>Begin setting up in-app wallets for end-users.</p>
@@ -354,7 +355,7 @@
                 </div>
                  <div class="event event-unhappened">
                     <div class="icon"></div>
-                    <div class="info">
+                    <div class="info os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                         <h2 class="event-time">Q1 2019</h2>
                         <p>Third-party security audits.</p>
                         <p>Food delivery partnership agreements.</p>
@@ -362,7 +363,7 @@
                 </div>
                  <div class="event event-unhappened">
                     <div class="icon"></div>
-                    <div class="info">
+                    <div class="info os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                         <h2 class="event-time">Q3 2019</h2>
                         <p>Release a new website just for restaurant owners/managers.</p>
                         <p>Build web-based wallets for restaurants to facilitate advertisement.</p>
@@ -371,7 +372,7 @@
                 </div>
                  <div class="event event-unhappened">
                     <div class="icon"></div>
-                    <div class="info">
+                    <div class="info os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                         <h2 class="event-time">Q4 2019</h2>
                         <p>Integrate food delivery on Munchee platform.</p>
                     </div>
@@ -564,7 +565,7 @@
             <h2 class="title">RECOGNITION</h2>
             <div class="row article-list">
                 <div class="col-sm-4 article">
-                    <div class="article-wrapper">
+                    <div class="article-wrapper os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3s">
                         <div class="image-section"><img src="assets/articles/image_section1.png" alt=""></div>
                         <div class="image-hero"><img src="assets/articles/image_hero1.png" alt=""></div>
                         <div class="title">If Instagram and Yelp had a blockchain-baby — it would be this app for foodies</div>
@@ -572,7 +573,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4 article">
-                    <div class="article-wrapper">
+                    <div class="article-wrapper os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3s">
                         <div class="image-section"><img src="assets/articles/image_section2.png" alt=""></div>
                         <div class="image-hero"><img src="assets/articles/image_hero2.png" alt=""></div>
                         <div class="title">From Messengers to Food Reviews, Companies Incorporate Blockchain into Apps</div>
@@ -580,7 +581,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4 article">
-                    <div class="article-wrapper">
+                    <div class="article-wrapper os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3s">
                         <div class="image-section"><img src="assets/articles/image_section3.png" alt=""></div>
                         <div class="image-hero"><img src="assets/articles/image_hero3.png" alt=""></div>
                         <div class="title">Munchee - Yelp & Instagram for cravings</div>
@@ -607,20 +608,37 @@
         </div>
     </section>
     <section id="subscribe-bottom-section">
+        <div class="parallax"></div>
         <div class="container">
-            <div class="paralax"></div>
-            <p>dsadsadasd as</p>
-             <p>dsadsadasd as</p>
-              <p>dsadsadasd as</p>
-               <p>dsadsadasd as</p>
-                <p>dsadsadasd as</p>
-                <h2 class="title">dsadsadas</h2>
-                                <h2 class="title">dsadsadas</h2>
-
+            <h2 class="title">Join Our Whitelist</h2>
+            <div class="subscribe-field input-group">
+                <input type="search" name="" id="join-munchee-bottom" 
+                    class="form-control top-search-field" value=""  title="" placeholder="Email Address">
+                <a id="subscribe-bottom-btn" class="btn">Join Now</a>
+            </div>
+            <ul id="social-media-horizontal-list">
+                <li class="facebook"><a href="https://www.facebook.com/muncheeapp/"><img src="assets/social/facebook.png" alt=""></a></li>
+                <li class="twitter"><a href="https://twitter.com/MuncheePlatform"><img src="assets/social/twitter.png" alt=""></a></li>
+                <li class="slack"><a href="https://muncheeplatform.slack.com/join/shared_invite/enQtMjQzMzkxMDA1NDU3LWQyMmZlZGRlMDQ4ZWNjOGZhOGJhMzRmNjg5Yzc1MjI2OTViYTdhYzM5ZjQwZGExMjQ3NTYyMTk5ZWJhZGYyOTg"><img src="assets/social/slack.png" alt=""></a></li>
+                <li class="instagram"><a href="https://instagram.com/muncheeapp/"><img src="assets/social/instagram.png" alt=""></a></li>
+                <li class="telegram"><a href="https://t.me/MuncheePlatform"><img src="assets/social/telegram.png" alt=""></a></li>
+                <li class="medium"><a href="https://blog.munchee.io/"><img src="assets/social/medium.png" alt=""></a></li>
+            </ul>
         </div>
     </section>
+    <ul id="social-media-vertical-list">
+        <li class="facebook"><a href="https://www.facebook.com/muncheeapp/"><img src="assets/social/facebook.png" alt=""></a></li>
+        <li class="twitter"><a href="https://twitter.com/MuncheePlatform"><img src="assets/social/twitter.png" alt=""></a></li>
+        <li class="slack"><a href="https://muncheeplatform.slack.com/join/shared_invite/enQtMjQzMzkxMDA1NDU3LWQyMmZlZGRlMDQ4ZWNjOGZhOGJhMzRmNjg5Yzc1MjI2OTViYTdhYzM5ZjQwZGExMjQ3NTYyMTk5ZWJhZGYyOTg"><img src="assets/social/slack.png" alt=""></a></li>
+        <li class="instagram"><a href="https://instagram.com/muncheeapp/"><img src="assets/social/instagram.png" alt=""></a></li>
+        <li class="telegram"><a href="https://t.me/MuncheePlatform"><img src="assets/social/telegram.png" alt=""></a></li>
+        <li class="medium"><a href="https://blog.munchee.io/"><img src="assets/social/medium.png" alt=""></a></li>
+    </ul>
 <footer>
-
+    <div class="container">
+        <p>© 2017 by Munchee Inc.</p>
+        <p>A Sillicon Valley- based Company</p>
+    </div>
 </footer>
 </main>
 <!-- custom js -->
