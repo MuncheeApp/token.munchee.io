@@ -193,8 +193,10 @@ footer p { font-size: 14px; line-height: 1.4em; }
 #team-section .roster { margin-bottom: 60px; }
 #team-section .member { color: #0E2E47; }
 #team-section .member .title { font-family: 'Helvetica', sans-serif; font-size: 16px; font-weight: bold; line-height: 1.4em; text-align: center; margin: 12px 0 0 0; }
-#team-section .member .linkedin { display: block; width: 38px; height: 38px; margin: 8px auto 12px auto; background-image: url(../assets/linkedin.png); background-size: 100% 100%; background-repeat: no-repeat; }
-#team-section .member .info { font-size: 14px; font-weight: 300; line-height: 1.4em; letter-spacing: 0.05em; text-align: justify; }
+#team-section .member .linkedin, #team-section .member .own-website { display: block; width: 30px; height: 30px; margin: 8px auto 0 auto; background-size: 100% 100%; background-repeat: no-repeat; }
+#team-section .member .linkedin { background-image: url(../assets/linkedin.png); }
+#team-section .member .own-website { background-image: url(../assets/own_website.png); }
+#team-section .member .info { font-size: 14px; font-weight: 300; line-height: 1.4em; letter-spacing: 0.05em; text-align: justify; margin-top: 12px; }
 #team-section .roster .member:nth-of-type(2) { margin-top: -60px; }
 #team-section .roster:nth-last-of-type(1) { margin-bottom: 0; }
 #team-section .roster:nth-last-of-type(1) .member { margin: -60px auto 0 auto; }
@@ -214,7 +216,7 @@ footer p { font-size: 14px; line-height: 1.4em; }
 #recognition-section .article-wrapper .image-hero { width: calc(100% + 20px); margin-left: -10px; height: 157px; object-fit: contain; overflow: hidden; }
 #recognition-section .article-wrapper .image-hero img { height: 100%; }
 #recognition-section .article-wrapper .title { font-family: 'Helvetica',sans-serif; font-weight: bold; font-size: 18px; color: #2F2E2E; margin: 18px 0; height: 80px; overflow-y: hidden; }
-#recognition-section .article-wrapper a { width: 142px; height: 40px; line-height: 40px; display: block; margin: 10px auto; }
+#recognition-section .article-wrapper a.btn-bg_pink-text_white { width: 142px; height: 40px; line-height: 40px; display: block; margin: 10px auto; }
 #recognition-section .organization { margin: 30px 0; }
 #recognition-section .organization .item { height: 40px; }
 
