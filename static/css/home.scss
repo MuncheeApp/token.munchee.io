@@ -155,14 +155,17 @@
             width: 258px;
             height: 445px;
             object-fit: cover;
+            position: absolute;
+            left: 25px;
+            top: 0;
         }
         .small{
             width: 181px;
             height: 334px;
             object-fit: cover;
             position: absolute;
-            left: 61%;
-            top: 30%;
+            left: 142px;
+            top: 162px;
         }
     }
 }
@@ -220,15 +223,9 @@
         padding: 20px 80px;
     }
     .title{
-        font-size: 25px;
-        letter-spacing: 0.2em;
-        text-align: center;
         margin-bottom: 50px;
     }
-    p{
-        font-size: 17px;
-        line-height: 1.6;
-        letter-spacing: 0.05em;
+    p.intro{
         margin-bottom: 30px;
     }
 }
@@ -243,9 +240,6 @@
     background-position: center center;
     text-align: center;
     .title{
-        font-size: 25px;
-        letter-spacing: 0.2em;
-        text-align: center;
         margin-bottom: 30px;
     }
     p.intro{
@@ -279,17 +273,12 @@
     padding: 106px 0;
     text-align: center;
     h2.title{
-        font-size: 25px;
-        letter-spacing: 0.2em;
-        text-align: center;
         margin-bottom: 25px;
         color: rgb(239, 84, 84);
     }
-    p{
+    p.intro{
         color: #0E2E47;
-        font-size: 17px;
-        letter-spacing: 0.05em;
-        text-align: center;
+
     }
     .app{
         margin-top: 30px;
@@ -376,21 +365,19 @@
     background: rgba(47, 46, 46, 1);
     color: #fff;
     padding: 106px 0;
-    .title{
+    h2.title{
         margin-bottom: 50px;
     }
-    .token-desc{
-        font-size: 17px;
-        letter-spacing: 0.05em;
+    p.intro{
         max-width: 700px;
         margin: auto;
     }
-    .token:nth-of-type(1) .token-desc{
+    .token:nth-of-type(1) p.intro{
         text-align: left;
         margin-top: 150px;
         margin-left: 15px;
     }
-    .token:nth-of-type(2) .token-desc{
+    .token:nth-of-type(2) p.intro{
         text-align: center;
         margin-top: 50px;
     }
@@ -586,7 +573,7 @@
     .roster:nth-last-of-type(1){
         margin-bottom: 0;
         .member{
-            margin: -60px auto 0 auto;
+            margin: -20px auto 0 auto;
         }
     }
 }
@@ -750,5 +737,187 @@
         img{
             max-width: 18px;
         }
+    }
+}
+
+/* RESPONSIVE */
+@media (min-width: 768px) and (max-width: 991px) {
+    body{
+        font-size: 15px;
+    }
+
+    #logo-home{
+        width: 140px;
+        height: auto;
+        top: 30px;
+    }
+
+    #menu-home {
+        .nav-link{
+            font-size: 13px;
+            padding: 0 4px;
+        }
+    }
+    
+    #countdown-section{
+        .left-info{
+            width: 410px;
+            .slogan{
+                font-size: 16px;
+                margin-bottom: 40px;
+            }
+           .date-detail{
+               font-size: 14px;
+           }
+           .date-section{
+                width: 385px;
+                font-size: 20px;
+           }
+           .date-countdown{
+               margin-bottom: 50px;
+           }
+           .btn-bg_pink-text_white{
+                font-size: 14px;
+                width: 197px;
+                height: 46px;
+                line-height: 46px;
+                margin-right: 7px;
+           }
+        }
+
+        .right-info{
+            width: calc(100% - 410px);
+            .app {
+                .app-store, .google-play{
+                    width: calc(50% - 8px);
+                    margin-right: 5px;
+                }
+            }
+            .right-image{
+                .big{
+                    width: 200px;
+                    height: auto;
+                }
+                .small{
+                    width: 140px;
+                    height: auto;
+                    left: 140px;
+                    top: 135px;
+                }
+            }
+        }
+    }
+
+    /* clock countdown */
+    .flip-clock-wrapper{
+        ul{
+            margin: 2px;
+            width: 40px;
+            height: 60px;
+            line-height: 60px;
+            li {
+                line-height: 60px;
+                a div div.inn{
+                    font-size: 45px;
+                }
+            }
+        }
+    }
+
+    .flip-clock-divider{
+        width: 14px;
+        height: 60px;
+    }
+
+    .flip-clock-dot{
+        left: 2px;
+        &.top{
+            top: 35px;
+        }
+    }
+
+    #youtube-section{
+        iframe{
+            width: 600px;
+            height: 338px;
+        }
+    }
+
+    .whitepaper-list {
+        .btn-bg_pink-text_white{
+            font-size: 14px;
+        }
+        .col-sm-3{
+            padding: 0 2px;
+        }
+    }
+
+    #subscribe-section {
+        .title{
+            font-size: 31px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+    
+    #solution-section{
+        .solution-list{
+            .item{
+                .name{
+                    font-size: 19px;
+                    margin-bottom: 8px;
+                    height: 40px;
+                    overflow-y: hidden
+                }
+            }
+        }
+    }
+
+    #live-product-section {
+        .showcase {
+            .case {
+                .image{
+                    width: 260px;
+                }
+                .info {
+                    width: calc(100% - 260px);
+                    .wrap {
+                        p{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .timeline-roadmap{
+        .event{
+            .info{
+                .event-time{
+                    font-size: 24px;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    #recognition-section {
+         .article-wrapper{
+             height: 360px;
+             .image-hero{
+                 height: 120px;
+             }
+            .title{
+                font-size: 17px;
+            }
+         }
+    }
+
+    #social-media-vertical-list{
+        right: 20px;
     }
 }
