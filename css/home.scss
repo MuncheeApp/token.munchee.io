@@ -24,13 +24,10 @@
 	    height: 100%; 
 	}
 }
-.date-countdown{
-    margin-bottom: 100px;
-}
 
 #top-nav{
     position: fixed;
-    z-index: 9999;
+    z-index: 1000;
     width: 100%;
     height: 95px;
     left: 0;
@@ -97,11 +94,14 @@
     .slogan{
         font-size: 23px;
         letter-spacing: 0.2em;
-        margin: 0;
+        margin: 0 0 60px 0;
     }
     .date-detail{
         font-size: 21px;
-        margin: 100px 0 30px 0;
+        margin: 0 0 30px 0;
+    }
+    .date-countdown{
+        margin: 20px 0 80px 0;
     }
     .date-section{
         height: 31px;
@@ -188,25 +188,6 @@
         font-size: 17px;
         margin: 30px 0 0 0;
     }
-    .subscribe-field{
-        width: 507px;
-        margin: auto;
-        input{
-            padding: 10px;
-            background-color: rgba(255,255,255,1);
-            color: #0E2E47;
-            font-size: 16px;
-            font-weight: 300;
-            line-height: 20px;
-            width: 296px;
-            margin-right: 12px;
-            border: 0;
-            border-radius: 0;
-        }
-        input::placeholder{
-            color: #000;
-        }
-    }
 }
 #subscribe-btn {
     background-color: rgba(114,179,50,1) !important;
@@ -258,10 +239,7 @@
         text-align: center;
         margin-bottom: 30px;
     }
-    & > p{
-        font-size: 17px;
-        line-height: 1.6;
-        letter-spacing: 0.05em;
+    p.intro{
         margin-bottom: 30px;
     }
     .solution-list{
@@ -451,14 +429,14 @@
             margin-top: 6px;
         }
         .data{
-            font-size: 13px;
+            font-size: 14px;
             color: #0E2E47;
             display: inline-block;
             vertical-align: middle;
-            width: calc(100% - 32px);
+            width: calc(100% - 36px);
             margin-left: -4px;
             margin-bottom: 20px;
-            padding-left: 26px;
+            padding-left: 20px;
         }
     }
 }
@@ -525,7 +503,7 @@
             }
             p{
                 font-size: 17px;
-                font-weight: 300;
+                font-weight: normal;
                 letter-spacing: 0.05em;
                 line-height: 1.5;
                 margin-bottom: 15px;

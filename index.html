@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <!-- Javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="lib/flipclock/flipclock.min.js"></script>
     <script src="lib/waypoint/jquery.waypoints.min.js"></script>
 </head>
@@ -57,7 +58,7 @@
 <main id="main">
     <section id="banner-video">
         <div class="home-banner-img"></div>
-        <video preload="auto" class="mchee-video" id="mchee-video" autoplay="autoplay" poster="./assets/preview_video.png">
+        <video loop="loop" preload="auto" class="mchee-video" id="mchee-video" autoplay="autoplay" poster="./assets/preview_video.png">
             <source src="./assets/munchee_video.mp4" type="video/mp4">
         </video>
     </section>
@@ -66,6 +67,7 @@
             <div class="left-info">
                 <h2 class="slogan">A DECENTRALIZED BLOCKCHAIN-BASED FOOD REVIEW SOCIAL MEDIA PLATFORM</h2>
                 <h3 class="date-detail">MUN token PRE-SALE starts on Oct 31, 2017</h3>
+                <h3 class="date-detail">Don't miss the 15% discount and 5% referral bonus!</h3>
                 <div class="date-countdown">
                     <div id="clock-countdown"></div>
                     <ul class="date-section">
@@ -132,7 +134,7 @@
     <section id="solution-section">
         <div class="container">
             <h2 class="title">MUNCHEE'S SOLUTIONS</h2>
-            <p>Munchee is building a Blockchain-based incentivized food review platform.</p>
+            <p class="intro">Munchee is building a Blockchain-based incentivized food review platform.</p>
             <div class="solution-list row">
                 <div class="col-md-4 item os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3s">
                     <figure>
@@ -214,7 +216,7 @@
                     <div class="image overlap os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0.3s">
                         <img alt="" src="assets/phone6.png">
                     </div>
-                    <div class="info os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.3s"">
+                    <div class="info os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.3s">
                         <div class="wrap"><p>Be a food influencer and get rewards<br> with our existing in-app reward system!</p></div>
                     </div>
                 </div>
@@ -644,5 +646,23 @@
 <!-- custom js -->
 <script src="./js/service.js"></script>
 </body>
+
+<!-- Modal POP UP -->
+<div class="modal fade" id="munchee-popup" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="popup-title">JOIN OUR MAILING LIST</h2>
+        <p class="popup-subhead">Don’t miss our PRE-SALE Whitelist and updates! Sign up NOW!</p>
+        <div class="subscribe-field input-group">
+                <input type="search" name="" id="join-munchee-popup" 
+                    class="form-control top-search-field" value=""  title="" placeholder="Email Address">
+                <a href="" id="subscribe-popup-btn" class="subscribe-btn">Subscribe</a>
+        </div>
+    </div>
+  </div>
+</div>
 
 </html>

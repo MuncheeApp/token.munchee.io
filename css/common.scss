@@ -162,6 +162,7 @@ h2.title{
 }
 p.intro{
     font-size: 17px;
+    line-height: 1.6;
     letter-spacing: 0.05em;
 }
 .btn-bg_pink-text_white{
@@ -198,10 +199,95 @@ footer{
         line-height: 1.4em;
     }
 }
+
+.subscribe-field{
+    width: 507px;
+    margin: auto;
+    input{
+        padding: 10px;
+        background-color: rgba(255,255,255,1);
+        color: #0E2E47;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 20px;
+        width: 296px;
+        margin-right: 12px;
+        border: 0;
+        border-radius: 0;
+    }
+    input::placeholder{
+        color: #000;
+    }
+}
+.subscribe-btn {
+    color: #fff;
+    font-weight: bold;
+    border-radius: 0;
+    padding: 9px 24px;
+}
+//Animation
 .os-animation{
   opacity: 0;
 }
 
 .os-animation.animated{
     opacity: 1;
+}
+
+// Pop up 
+#munchee-popup{
+    background: rgba(131, 150, 156, 0.85);
+    .modal-dialog{
+        max-width: 600px;
+        margin: 150px auto;
+    }
+    .modal-content{
+        border: 8px solid #ef5454;
+        padding: 80px 20px;
+        min-height: 365px;
+        text-align: center;
+    }
+    button.close{
+        width: 22px;
+        height: 22px;
+        font-size: 50px;
+        line-height: 22px;
+        color: #000;
+        cursor: pointer;
+        position: absolute;
+        right: -42px;
+        top: -8px;
+        font-weight: 500;
+    }
+    .popup-title{
+        font-size: 34px;
+        font-weight: 900;
+        color: #ef5454;
+        font-family: 'Tahoma';
+        letter-spacing: 0.05em;
+        margin-bottom: 22px;
+    }
+    .popup-subhead{
+        font-size: 19px;
+        line-height: 1.4;
+        color: #0E2E47;
+        margin-bottom: 70px;
+    }
+    .subscribe-field{
+        width: 440px;
+        input{
+            padding: 6px 10px;
+            font-size: 15px;
+            font-weight: normal;
+            border: 0.5px solid #605E5E;
+            &::placeholder{
+                color: #0E2E47;
+            }
+        }
+    }
+    .subscribe-btn{
+        font-size: 15px;
+        padding: 6px 23px;
+        background: #ef5454;
+    }
 }

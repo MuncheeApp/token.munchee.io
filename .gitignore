@@ -57,3 +57,6 @@ typings/
 # dotenv environment variables file
 .env
 
+.map.css
+*/css/home.css
+*/css/common.css

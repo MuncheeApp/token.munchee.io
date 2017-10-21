@@ -7,11 +7,18 @@ $(function(){
         clockFace: 'DailyCounter',
         countdown: true
     });
-        var a = -200;
-        var num = 2;
-        var oldScrollTop = 0;
-        var scrollTop;
-        var scrollSpeed = 5;
+
+    //Show pop up
+    setTimeout(function(){
+        $('#munchee-popup').modal('show');
+    }, 3000)
+    
+    //Scroll parallax
+    var a = -200;
+    var num = 2;
+    var oldScrollTop = 0;
+    var scrollTop;
+    var scrollSpeed = 5;
     $(window).scroll(function() {
         oldScrollTop = scrollTop;
         scrollTop = $(this).scrollTop();
@@ -92,4 +99,5 @@ $(function(){
     }
 
     onScrollInit( $('.os-animation') );
+
 })
