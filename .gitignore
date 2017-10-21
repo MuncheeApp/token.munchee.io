@@ -60,3 +60,7 @@ typings/
 .map.css
 */css/home.css
 */css/common.css
+css/common.css
+css/common.css.map
+css/home.css
+*.map
