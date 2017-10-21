@@ -1,4 +1,4 @@
-# foodee-landing
+# Source code for token.munchee.io
 To deploy to Heroku , run the command
 
 ```javascript
