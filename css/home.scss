@@ -54,7 +54,6 @@
 }
 #menu-home{
     top: 20px;
-    left: 250px;
     right: 0px;
     position: absolute;
     margin: auto;
@@ -99,6 +98,9 @@
     .date-detail{
         font-size: 21px;
         margin: 0 0 30px 0;
+        &:nth-last-of-type(1){
+            text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -1px -1px 1px;
+        }
     }
     .date-countdown{
         margin: 20px 0 80px 0;
@@ -173,7 +175,14 @@
     transparent 0%,
     rgba(255, 255, 255, 1) 100%);
 }
-
+.whitepaper-list {
+    margin-top: 60px;
+    .btn-bg_pink-text_white{
+        margin: 0 0 30px 0;
+        height: 67px;
+        line-height: 67px;
+    }
+}
 /* subscribe */
 #subscribe-section{
     padding: 106px 0;

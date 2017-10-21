@@ -5,7 +5,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 * { -moz-user-select: -moz-none; -khtml-user-select: none; -webkit-user-select: none;  /* Introduced in IE 10. See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
 */ -ms-user-select: none; user-select: none; }
 
-html, body { width: 100%; height: 100%; margin: 0; }
+html, body { margin: 0; }
 
 body { padding-top: 95px; font-size: 16px; font-family: 'Lato', sans-serif; font-weight: normal; text-rendering: optimizeLegibility !important; -webkit-font-smoothing: antialiased !important; }
 
@@ -35,7 +35,7 @@ h2.title { font-size: 25px; letter-spacing: 0.2em; text-align: center; margin-bo
 
 p.intro { font-size: 17px; line-height: 1.6; letter-spacing: 0.05em; }
 
-.btn-bg_pink-text_white { min-width: 50px; min-height: 30px; font-size: 15px; color: #fff; background-color: #ef5454; border: solid #ab0535 0px; border-radius: 50px; margin-right: 40px; text-align: center; transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s; }
+.btn-bg_pink-text_white { display: block; min-width: 50px; min-height: 30px; font-size: 15px; color: #fff; background-color: #ef5454; border: solid #ab0535 0px; border-radius: 50px; margin-right: 40px; text-align: center; transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s; }
 .btn-bg_pink-text_white:hover { background-color: white; border: 1px solid #ef5454; color: #ef5454; }
 
 footer { text-align: center; height: 66px; font-weight: 300; color: #fff; background: #000; display: table; width: 100%; }
@@ -59,9 +59,9 @@ footer p { font-size: 14px; line-height: 1.4em; }
 #munchee-popup .popup-title { font-size: 34px; font-weight: 900; color: #ef5454; font-family: 'Tahoma'; letter-spacing: 0.05em; margin-bottom: 22px; }
 #munchee-popup .popup-subhead { font-size: 19px; line-height: 1.4; color: #0E2E47; margin-bottom: 70px; }
 #munchee-popup .subscribe-field { width: 440px; }
-#munchee-popup .subscribe-field input { padding: 6px 10px; font-size: 15px; font-weight: normal; border: 0.5px solid #605E5E; }
-#munchee-popup .subscribe-field input::placeholder { color: #0E2E47; }
-#munchee-popup .subscribe-btn { font-size: 15px; padding: 6px 23px; background: #ef5454; }
+#munchee-popup .subscribe-field input { padding: 6px 10px; font-size: 15px; font-weight: normal; border: 0.5px solid #605E5E; color: #2d2d2d; }
+#munchee-popup .subscribe-field input::placeholder { font-size: 15px; color: #605E5E; }
+#munchee-popup .subscribe-btn { font-size: 15px; padding: 6px 23px; background: #ef5454; color: #fff; }
 
 #banner-video { position: fixed; width: 100%; top: 0; left: 0; height: 100%; z-index: -2; overflow: hidden; }
 #banner-video .mchee-video { position: absolute; width: 100%; height: 100%; object-fit: cover; object-position: center center; }
@@ -73,7 +73,7 @@ footer p { font-size: 14px; line-height: 1.4em; }
 #logo-home { display: block; width: 195px; height: 50px; position: absolute; z-index: 1; left: 0; top: 22px; }
 #logo-home img { width: 100%; height: 100%; }
 
-#menu-home { top: 20px; left: 250px; right: 0px; position: absolute; margin: auto; z-index: 2; height: 50px; line-height: 50px; text-align: right; }
+#menu-home { top: 20px; right: 0px; position: absolute; margin: auto; z-index: 2; height: 50px; line-height: 50px; text-align: right; }
 #menu-home .nav-link { font-size: 15px; font-weight: normal; line-height: 1.4em; text-align: center; color: #ffffff; display: inline-block; vertical-align: middle; padding: 0 12px; }
 #menu-home .nav-link:hover { color: #ef5454; }
 
@@ -84,6 +84,7 @@ footer p { font-size: 14px; line-height: 1.4em; }
 #countdown-section .left-info { padding-top: 80px; float: left; width: 620px; height: 100%; color: #fff; }
 #countdown-section .left-info .slogan { font-size: 23px; letter-spacing: 0.2em; margin: 0 0 60px 0; }
 #countdown-section .left-info .date-detail { font-size: 21px; margin: 0 0 30px 0; }
+#countdown-section .left-info .date-detail:nth-last-of-type(1) { text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -1px -1px 1px; }
 #countdown-section .left-info .date-countdown { margin: 20px 0 80px 0; }
 #countdown-section .left-info .date-section { height: 31px; line-height: 31px; font-size: 24px; box-shadow: black 0px 0px 12.1634px; text-shadow: white 0px 0px 2.43268px; background: #000; width: 610px; margin: 17px 0 17px 5px; }
 #countdown-section .left-info .date-section li { display: inline-block; width: 25%; margin: 0 0 0 -4px; text-align: center; }
@@ -102,6 +103,9 @@ footer p { font-size: 14px; line-height: 1.4em; }
 
 /* youtube section */
 #youtube-section { padding: 106px 0; text-align: center; background: linear-gradient(to bottom, transparent 0%, white 100%); }
+
+.whitepaper-list { margin-top: 60px; }
+.whitepaper-list .btn-bg_pink-text_white { margin: 0 0 30px 0; height: 67px; line-height: 67px; }
 
 /* subscribe */
 #subscribe-section { padding: 106px 0; background: #ef5454; color: #fff; text-align: center; }

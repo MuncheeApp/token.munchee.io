@@ -79,8 +79,6 @@ td {
     user-select: none;
 }
 html,body{
-    width: 100%;
-    height: 100%;
     margin:0;
 }
 body {
@@ -166,6 +164,7 @@ p.intro{
     letter-spacing: 0.05em;
 }
 .btn-bg_pink-text_white{
+    display: block;
     min-width: 50px;
     min-height: 30px;
     font-size: 15px;
@@ -280,8 +279,10 @@ footer{
             font-size: 15px;
             font-weight: normal;
             border: 0.5px solid #605E5E;
+            color: #2d2d2d;
             &::placeholder{
-                color: #0E2E47;
+                font-size: 15px;
+                color: #605E5E;
             }
         }
     }
@@ -289,5 +290,6 @@ footer{
         font-size: 15px;
         padding: 6px 23px;
         background: #ef5454;
+        color: #fff;
     }
 }
