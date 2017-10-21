@@ -77,6 +77,7 @@ td {
    */
     -ms-user-select: none;
     user-select: none;
+    word-wrap: break-word;
 }
 html,body{
     margin:0;
@@ -300,7 +301,6 @@ footer{
 /* hamburger button */
 
 .hamburger-btn {
-    width: 60px;
   width: 60px;
   height: 45px;
   position: relative;
@@ -428,6 +428,57 @@ footer{
 }
 @media only screen and (max-width: 575px){
     .container{
-        width: 320px;
+        width: 300px;
+        padding: 0 10px;
+    }
+    #munchee-popup{
+         .modal-dialog{
+             max-width: 310px;
+             margin: 100px auto
+         }
+         .modal-content{
+            padding: 20px;
+            min-height: 340px;
+         }
+         .popup-subhead{
+             margin-bottom: 20px;
+         }
+         .popup-title{
+             font-size: 28px;
+         }
+         .subscribe-field{
+             width: 100%;
+         }
+    }
+    .hamburger-btn {
+        width: 45px;
+        height: 35px;
+    }
+    .subscribe-field{
+        display: block;
+        width: 100%;
+        input.form-control{
+            width: 100%;
+            margin: 0 0 10px 0;
+            display: block;
+        }
+        .btn{
+            width: 100%;
+        }
+    }
+    h2.title{
+        font-size: 18px;
+    }
+    p.intro{
+        font-size: 16px;
+    }
+    .app {
+        .app-store, .google-play{
+            width: calc(50% - 8px);
+            margin: 0;
+        }
+        .google-play{
+            margin-left: 8px;
+        }
     }
 }

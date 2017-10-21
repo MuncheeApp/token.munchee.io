@@ -711,25 +711,6 @@
         font-size: 32px;
         margin: 0 0 50px 0;
     }
-    .subscribe-field{
-        width: 507px;
-        margin: auto;
-        input{
-            padding: 10px;
-            background-color: rgba(255,255,255,1);
-            color: #0E2E47;
-            font-size: 16px;
-            font-weight: 300;
-            line-height: 20px;
-            width: 296px;
-            margin-right: 12px;
-            border: 0;
-            border-radius: 0;
-        }
-        input::placeholder{
-            color: #000;
-        }
-    }
     .parallax{
         width: 100%;
         background-size: cover;
@@ -1152,11 +1133,12 @@
         height: 70px;
         background: #000;
     }
-    #menu-home{
+    #menu-home, #social-media-vertical-list{
         display: none;
     }
     #menu-mobile-btn{
         display: block;
+        left: 5px;
     }
     #logo-home{
         top: 15px;
@@ -1172,13 +1154,12 @@
     .flip-clock-wrapper{
         ul{
             margin: 2px;
-            width: 40px;
-            height: 60px;
-            line-height: 60px;
+            width: 28px;
+            height: 50px;
             li {
-                line-height: 60px;
+                line-height: 48px;
                 a div div.inn{
-                    font-size: 45px;
+                    font-size: 40px;
                 }
             }
         }
@@ -1202,16 +1183,24 @@
             width: 100%;
             .slogan{
                 text-align: center;
+                font-size: 19px;
+                margin: 0 0 30px 0;
             }
            .date-detail{
-               text-align: center;
+                text-align: center;
+                font-size: 17px;
+                margin: 0 0 20px 0;
            }
            .date-section{
-                width: 388px;
-                margin: 17px auto;
+                width: 296px;
+                margin: 6px auto;
+                font-size: 16px;
+           }
+           .date-countdown{
+               margin-bottom: 30px;
            }
            #clock-countdown{
-                width: 400px;
+                width: 310px;
                 margin: auto;
            }
            .btn-group{
@@ -1220,37 +1209,29 @@
                 display: block;
            }
            .btn-bg_pink-text_white{
-                width: calc(50% - 40px);
-                height: 62px;
-                line-height: 62px;
-                display: inline-block;
-                margin-right: 20px;
-                &:nth-last-of-type(1){
-                    margin-right: 0;
-                }
+                width: 100%;
+                height: 50px;
+                line-height: 50px;
+                display: block;
+                margin-bottom: 20px;
            }
         }
 
         .right-info{
             float: none;
             width: 100%;
-            .app {
-                .app-store, .google-play{
-                    width: calc(50% - 20px);
-                }
-                .app-store{
-                    margin-right: 20px;
-                }
-            }
+            padding-top: 30px;
             .right-image{
                 .big{
                     position: static;
-                    width: 233px;
+                    width: 190px;
                     left: 10px;
+                    height: auto;
                 }
                 .small{
-                    width: 159px;
-                    right: 20%;
+                    width: 100px;
+                    height: auto;
+                    right: 52px;
                     left: auto;
                 }
             }
@@ -1258,19 +1239,44 @@
     }
 
     #youtube-section{
+        padding: 40px 0px;
         #munchee-youtube{
-            width: 480px;
-            height: 300px;
+            width: 280px;
+            height: 200px;
+        }
+        .whitepaper-list {
+            margin-top: 20px;
+            .btn-bg_pink-text_white {
+                margin: 0 0 10px 0;
+                height: 50px;
+                line-height: 50px;
+            }
+        }
+    }
+    #subscribe-section {
+        h2.title{
+            font-size: 25px;
+            letter-spacing: 0;
+            margin-bottom: 30px;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+    #current-problem-section{
+        padding: 50px 0;
+        & >  .container {
+            padding: 20px 25px;
+        }
+        .title{
+            margin-bottom: 30px;
         }
     }
 
-    #current-problem-section{
-        padding: 80px 0;
-    }
-
     #solution-section{
-        padding: 80px 0;
+        padding: 50px 0;
         .solution-list{
+            margin: 30px 0 0 0;
             .item{
                 .name, p{
                     text-align: center;
@@ -1279,24 +1285,56 @@
         }
     }
     #live-product-section {
+        padding: 50px 0;
         .showcase {
+            margin-top: 50px;
+            padding: 0;
             .case {
-                height: 420px;
+                min-height: 420px;
+                height: auto;
                 .image{
                     width: 220px;
+                    margin: auto;
+                    position: static;
                 }
                 .info{
-                    width: calc(100% - 220px);
+                    width: 100%;
+                    position: static;
+                    display: block;
+                    margin: auto;
+                    height: auto;
                 }
             }
-            .case:nth-of-type(even) .info{
-                right: 0;
+            .case:nth-of-type(even),.case:nth-of-type(odd){
+                    position: static;
+                    text-align: center;
+                    margin-bottom: 30px;
+                .wrap{
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    p{
+                        font-size: 16px;
+                        text-align: center;
+                    }
+                }
             }
             .case:nth-of-type(odd) .image.overlap{
-                width: 140px;
-                top: 200px;
-                right: -10px;
+                    width: 140px;
+                    top: 170px;
+                    right: 8px;
+                    position: absolute;
             }
+            .case:nth-last-of-type(1){
+                position: relative;
+                .info{
+                    margin-top: 30px;
+                }
+            }
+        }
+        .btn-bg_pink-text_white{
+            width: 100%;
+            margin: 30px auto;
         }
     }
     #token-model-section .token:nth-of-type(1) p.intro{
@@ -1318,6 +1356,40 @@
         .article-wrapper{
             width: 300px;
              margin: 0 auto 50px auto;
+        }
+    }
+
+    #roadmap-section{
+        padding: 50px 0;
+        h2.title {
+            margin-bottom: 40px;
+        }
+        .event {
+            .info {
+                .event-time{
+                    font-size: 21px;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+        .event:nth-of-type(2n) .info{
+            padding-right: 20px;
+        }
+        .event:nth-of-type(2n+1) .info{
+            padding-left: 20px;
+        }
+    }
+
+    #team-section{
+        padding: 50px 0;
+    }
+
+    #recognition-section{
+        padding: 50px 0;
+        #recognition-section .organization {
+            margin: 0;
         }
     }
 }
