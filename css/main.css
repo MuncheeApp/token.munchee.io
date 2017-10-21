@@ -9,14 +9,14 @@ html, body { width: 100%; height: 100%; margin: 0; }
 
 body { padding-top: 95px; font-size: 16px; font-family: 'Lato', sans-serif; font-weight: normal; text-rendering: optimizeLegibility !important; -webkit-font-smoothing: antialiased !important; }
 
-*, *:after, *:before { box-sizing: border-box; }
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix:before, .clearfix:after { content: " "; display: table; }
 
 .clearfix { zoom: 1; }
 
-button, .btn { -webkit-transition: background 100ms linear; transition: background 100ms linear; }
+button, .btn { -webkit-transition: background 100ms linear; -moz-transition: background 100ms linear; -ms-transition: background 100ms linear; -o-transition: background 100ms linear; transition: background 100ms linear; }
 button:focus, .btn:focus { outline: 0; }
 
 a { text-decoration: none; color: #a9aaac; cursor: pointer; }
@@ -35,7 +35,7 @@ h2.title { font-size: 25px; letter-spacing: 0.2em; text-align: center; margin-bo
 
 p.intro { font-size: 17px; letter-spacing: 0.05em; }
 
-.btn-bg_pink-text_white { min-width: 50px; min-height: 30px; font-size: 15px; color: #fff; background-color: #ef5454; border: solid #ab0535 0px; border-radius: 50px; margin-right: 40px; text-align: center; -webkit-transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s; transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s; }
+.btn-bg_pink-text_white { min-width: 50px; min-height: 30px; font-size: 15px; color: #fff; background-color: #ef5454; border: solid #ab0535 0px; border-radius: 50px; margin-right: 40px; text-align: center; transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s; }
 .btn-bg_pink-text_white:hover { background-color: white; border: 1px solid #ef5454; color: #ef5454; }
 
 footer { text-align: center; height: 66px; font-weight: 300; color: #fff; background: #000; display: table; width: 100%; }
@@ -85,7 +85,7 @@ footer p { font-size: 14px; line-height: 1.4em; }
 #countdown-section .right-info .right-image .small { width: 181px; height: 334px; object-fit: cover; position: absolute; left: 61%; top: 30%; }
 
 /* youtube section */
-#youtube-section { padding: 106px 0; text-align: center; background: -webkit-linear-gradient(top, transparent 0%, white 100%); background: linear-gradient(to bottom, transparent 0%, white 100%); }
+#youtube-section { padding: 106px 0; text-align: center; background: linear-gradient(to bottom, transparent 0%, white 100%); }
 
 /* subscribe */
 #subscribe-section { padding: 106px 0; background: #ef5454; color: #fff; text-align: center; }
@@ -93,9 +93,6 @@ footer p { font-size: 14px; line-height: 1.4em; }
 #subscribe-section p { font-size: 17px; margin: 30px 0 0 0; }
 #subscribe-section .subscribe-field { width: 507px; margin: auto; }
 #subscribe-section .subscribe-field input { padding: 10px; background-color: white; color: #0E2E47; font-size: 16px; font-weight: 300; line-height: 20px; width: 296px; margin-right: 12px; border: 0; border-radius: 0; }
-#subscribe-section .subscribe-field input::-webkit-input-placeholder { color: #000; }
-#subscribe-section .subscribe-field input::-moz-placeholder { color: #000; }
-#subscribe-section .subscribe-field input:-ms-input-placeholder { color: #000; }
 #subscribe-section .subscribe-field input::placeholder { color: #000; }
 
 #subscribe-btn { background-color: #72b332 !important; border: 2px solid #72b332; border-color: #72b332; color: #fff; font-weight: bold; border-radius: 0; padding: 9px 24px; }
@@ -208,11 +205,8 @@ footer p { font-size: 14px; line-height: 1.4em; }
 #subscribe-bottom-section .title { font-size: 32px; margin: 0 0 50px 0; }
 #subscribe-bottom-section .subscribe-field { width: 507px; margin: auto; }
 #subscribe-bottom-section .subscribe-field input { padding: 10px; background-color: white; color: #0E2E47; font-size: 16px; font-weight: 300; line-height: 20px; width: 296px; margin-right: 12px; border: 0; border-radius: 0; }
-#subscribe-bottom-section .subscribe-field input::-webkit-input-placeholder { color: #000; }
-#subscribe-bottom-section .subscribe-field input::-moz-placeholder { color: #000; }
-#subscribe-bottom-section .subscribe-field input:-ms-input-placeholder { color: #000; }
 #subscribe-bottom-section .subscribe-field input::placeholder { color: #000; }
-#subscribe-bottom-section .parallax { width: 100%; background-size: cover; background-image: url(../assets/bottom_bg.png); background-size: cover; background-position: center -200px; position: absolute; background-repeat: no-repeat; top: 0; left: 0; -webkit-transition: background-position 0.3s ease; transition: background-position 0.3s ease; }
+#subscribe-bottom-section .parallax { width: 100%; background-size: cover; background-image: url(../assets/bottom_bg.png); background-size: cover; background-position: center -200px; position: absolute; background-repeat: no-repeat; top: 0; left: 0; transition: background-position 0.3s ease; }
 
 #subscribe-bottom-btn { background-color: #ef5454; border: 2px solid #ef5454; border-color: #ef5454; color: #fff; border-radius: 0; padding: 9px 16px; }
 
