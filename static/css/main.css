@@ -131,7 +131,7 @@ footer p { font-size: 14px; line-height: 1.4em; }
 #menu-mobile-left li:active { background-color: rgba(151, 187, 216, 0.8); }
 #menu-mobile-left li a { color: #fff; font-size: 18px; text-align: left; font-weight: 300; }
 
-#menu-mobile-btn { display: none; position: absolute; left: 10px; top: 12px; }
+#menu-mobile-btn { display: none; position: absolute; left: 10px; top: 12px; z-index: 9999; }
 
 #menu-home { top: 20px; right: 0px; position: absolute; margin: auto; z-index: 2; height: 50px; line-height: 50px; text-align: right; }
 #menu-home .nav-link { font-size: 15px; font-weight: normal; line-height: 1.4em; text-align: center; color: #ffffff; display: inline-block; vertical-align: middle; padding: 0 12px; }
@@ -147,10 +147,10 @@ footer p { font-size: 14px; line-height: 1.4em; }
 #countdown-section .left-info .date-detail:nth-last-of-type(1) { text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -1px -1px 1px; }
 #countdown-section .left-info .date-countdown { margin: 20px 0 80px 0; }
 #countdown-section .left-info .date-section { height: 31px; line-height: 31px; font-size: 24px; box-shadow: black 0px 0px 12.1634px; text-shadow: white 0px 0px 2.43268px; background: #000; width: 610px; max-width: 100%; overflow-x: hidden; margin: 17px 0 17px 5px; }
-#countdown-section .left-info .date-section li { display: inline-block; width: calc(25% - 4px); margin: 0 0 0 -4px; text-align: center; }
-#countdown-section .left-info .date-section li:nth-of-type(2) { padding-left: 14px; }
-#countdown-section .left-info .date-section li:nth-of-type(3) { padding-left: 32px; }
-#countdown-section .left-info .date-section li:nth-of-type(4) { padding-left: 44px; }
+#countdown-section .left-info .date-section li { display: inline-block; width: 25%; margin: 0 0 0 -4px; text-align: center; }
+#countdown-section .left-info .date-section li:nth-of-type(2) { padding-left: 0px; }
+#countdown-section .left-info .date-section li:nth-of-type(3) { padding-left: 14px; }
+#countdown-section .left-info .date-section li:nth-of-type(4) { padding-left: 0; padding-right: 40px; text-align: right; }
 #countdown-section .left-info .btn-bg_pink-text_white { width: 273px; height: 62px; line-height: 62px; }
 
 #clock-countdown { margin: 0; }
@@ -158,7 +158,7 @@ footer p { font-size: 14px; line-height: 1.4em; }
 #clock-countdown ul li a div div.inn { background-color: #000; }
 
 #countdown-section .right-info { padding-top: 80px; float: right; width: calc(100% - 620px); height: 100%; }
-#countdown-section .right-info .right-image { margin-top: 30px; text-align: center; position: relative; }
+#countdown-section .right-info .right-image { margin-top: 30px; text-align: center; position: relative; height: 495px; }
 #countdown-section .right-info .right-image .big { width: 258px; height: 445px; object-fit: cover; position: absolute; left: 25px; top: 0; }
 #countdown-section .right-info .right-image .small { width: 181px; height: 334px; object-fit: cover; position: absolute; left: 142px; top: 162px; }
 
@@ -301,11 +301,16 @@ footer p { font-size: 14px; line-height: 1.4em; }
   #countdown-section .left-info { width: 410px; }
   #countdown-section .left-info .slogan { font-size: 16px; margin-bottom: 40px; }
   #countdown-section .left-info .date-detail { font-size: 14px; }
-  #countdown-section .left-info .date-section { width: 385px; font-size: 20px; }
+  #countdown-section .left-info .date-section { width: 396px; font-size: 20px; margin-left: 0; }
+  #countdown-section .left-info .date-section li:nth-of-type(2) { padding-left: 6px; }
+  #countdown-section .left-info .date-section li:nth-of-type(3) { padding-left: 18px; }
+  #countdown-section .left-info .date-section li:nth-of-type(4) { padding-left: 0px; padding-right: 16px; text-align: right; }
+  #countdown-section .left-info #clock-countdown { width: 396px; margin: 0; }
   #countdown-section .left-info .date-countdown { margin-bottom: 50px; }
   #countdown-section .left-info .btn-bg_pink-text_white { font-size: 14px; width: 197px; height: 46px; line-height: 46px; margin-right: 7px; }
   #countdown-section .right-info { width: calc(100% - 410px); }
   #countdown-section .right-info .app .app-store, #countdown-section .right-info .app .google-play { width: calc(50% - 8px); margin-right: 5px; }
+  #countdown-section .right-info .right-image { height: 400px; }
   #countdown-section .right-info .right-image .big { width: 200px; height: auto; }
   #countdown-section .right-info .right-image .small { width: 140px; height: auto; left: 140px; top: 135px; }
   /* clock countdown */
@@ -346,14 +351,18 @@ footer p { font-size: 14px; line-height: 1.4em; }
   #countdown-section .left-info { float: none; width: 100%; }
   #countdown-section .left-info .slogan { text-align: center; }
   #countdown-section .left-info .date-detail { text-align: center; }
-  #countdown-section .left-info .date-section { width: 388px; margin: 17px auto; }
-  #countdown-section .left-info #clock-countdown { width: 400px; margin: auto; }
+  #countdown-section .left-info .date-section { width: 396px; margin: 17px auto; }
+  #countdown-section .left-info .date-section li:nth-of-type(2) { padding-left: 6px; }
+  #countdown-section .left-info .date-section li:nth-of-type(3) { padding-left: 18px; }
+  #countdown-section .left-info .date-section li:nth-of-type(4) { padding-left: 0px; padding-right: 16px; text-align: right; }
+  #countdown-section .left-info #clock-countdown { width: 396px; margin: auto; }
   #countdown-section .left-info .btn-group { width: 100%; text-align: center; display: block; }
   #countdown-section .left-info .btn-bg_pink-text_white { width: calc(50% - 40px); height: 62px; line-height: 62px; display: inline-block; margin-right: 20px; }
   #countdown-section .left-info .btn-bg_pink-text_white:nth-last-of-type(1) { margin-right: 0; }
   #countdown-section .right-info { float: none; width: 100%; }
   #countdown-section .right-info .app .app-store, #countdown-section .right-info .app .google-play { width: calc(50% - 20px); }
   #countdown-section .right-info .app .app-store { margin-right: 20px; }
+  #countdown-section .right-info .right-image { height: auto; }
   #countdown-section .right-info .right-image .big { position: static; width: 233px; left: 10px; }
   #countdown-section .right-info .right-image .small { width: 159px; right: 20%; left: auto; }
   #youtube-section #munchee-youtube { width: 480px; height: 300px; }
@@ -388,15 +397,16 @@ footer p { font-size: 14px; line-height: 1.4em; }
   #countdown-section .left-info { float: none; width: 100%; }
   #countdown-section .left-info .slogan { text-align: center; font-size: 19px; margin: 0 0 30px 0; }
   #countdown-section .left-info .date-detail { text-align: center; font-size: 17px; margin: 0 0 20px 0; }
-  #countdown-section .left-info .date-section { width: 296px; margin: 6px auto; font-size: 16px; }
-  #countdown-section .left-info .date-section li:nth-of-type(2) { padding-left: 14px; }
-  #countdown-section .left-info .date-section li:nth-of-type(3) { padding-left: 32px; }
-  #countdown-section .left-info .date-section li:nth-of-type(4) { padding-left: 44px; }
+  #countdown-section .left-info .date-section { width: 280px; margin: 6px auto; font-size: 16px; }
+  #countdown-section .left-info .date-section li:nth-of-type(2) { padding-left: 6px; }
+  #countdown-section .left-info .date-section li:nth-of-type(3) { padding-left: 18px; }
+  #countdown-section .left-info .date-section li:nth-of-type(4) { padding-left: 0px; padding-right: 5px; text-align: right; }
   #countdown-section .left-info .date-countdown { margin-bottom: 30px; }
-  #countdown-section .left-info #clock-countdown { width: 310px; margin: auto; }
+  #countdown-section .left-info #clock-countdown { width: 280px; margin: auto; }
   #countdown-section .left-info .btn-group { width: 100%; text-align: center; display: block; }
   #countdown-section .left-info .btn-bg_pink-text_white { width: 100%; height: 50px; line-height: 50px; display: block; margin-bottom: 20px; }
   #countdown-section .right-info { float: none; width: 100%; padding-top: 30px; }
+  #countdown-section .right-info .right-image { height: auto; }
   #countdown-section .right-info .right-image .big { position: static; width: 190px; left: 10px; height: auto; }
   #countdown-section .right-info .right-image .small { width: 100px; height: auto; right: 52px; left: auto; }
   #youtube-section { padding: 40px 0px; }
@@ -423,12 +433,18 @@ footer p { font-size: 14px; line-height: 1.4em; }
   #live-product-section .showcase .case:nth-last-of-type(1) { position: relative; }
   #live-product-section .showcase .case:nth-last-of-type(1) .info { margin-top: 30px; }
   #live-product-section .btn-bg_pink-text_white { width: 100%; margin: 30px auto; }
-  #token-model-section .token:nth-of-type(1) p.intro { margin-top: 40px; }
+  #token-model-section { padding: 50px 0; }
+  #token-model-section h2.title { margin-bottom: 10px; }
+  #token-model-section figure { margin: 30px 0 10px 0; }
+  #token-model-section figcaption { padding: 10px 0; }
+  #token-model-section .token:nth-of-type(1) p.intro, #token-model-section .token:nth-of-type(2) p.intro { margin: 0; text-align: center; }
+  #funding-section { padding: 50px 0; }
+  #funding-section h2.title { margin-bottom: 30px; }
   #team-section .roster .member { margin-bottom: 20px; }
   #team-section .roster .member:nth-of-type(2) { margin-top: 0; }
   #team-section h2.title { margin-bottom: 60px; }
   #team-section .roster:nth-last-of-type(1) .member { margin: 0; }
-  #recognition-section .article-wrapper { width: 300px; margin: 0 auto 50px auto; }
+  #recognition-section .article-wrapper { margin: 0 auto 30px auto; }
   #roadmap-section { padding: 50px 0; }
   #roadmap-section h2.title { margin-bottom: 40px; }
   #roadmap-section .event .info .event-time { font-size: 21px; }
@@ -437,4 +453,5 @@ footer p { font-size: 14px; line-height: 1.4em; }
   #roadmap-section .event:nth-of-type(2n+1) .info { padding-left: 20px; }
   #team-section { padding: 50px 0; }
   #recognition-section { padding: 50px 0; }
-  #recognition-section #recognition-section .organization { margin: 0; } }
+  #recognition-section #recognition-section .organization { margin: 0; }
+  #subscribe-bottom-section { padding: 50px 0; } }

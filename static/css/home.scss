@@ -95,6 +95,7 @@
     position: absolute;
     left: 10px;
     top: 12px;
+    z-index: 9999;
 }
 #menu-home{
     top: 20px;
@@ -162,17 +163,19 @@
         margin: 17px 0 17px 5px;
         li{
             display: inline-block;
-            width: calc(25% - 4px);
+            width: 25%;
             margin: 0 0 0 -4px;
             text-align: center;
             &:nth-of-type(2){
-                padding-left: 14px;
+                padding-left: 0px;
             }
             &:nth-of-type(3){
-                padding-left: 32px;
+                padding-left: 14px;
             }
             &:nth-of-type(4){
-                padding-left: 44px;
+                padding-left: 0;
+                padding-right: 40px;
+                text-align: right;
             }
         }
     }
@@ -200,6 +203,7 @@
         margin-top: 30px;
         text-align: center;
         position: relative;
+        height: 495px;
         .big{
             width: 258px;
             height: 445px;
@@ -800,8 +804,26 @@
                font-size: 14px;
            }
            .date-section{
-                width: 385px;
+                width: 396px;
                 font-size: 20px;
+                margin-left: 0;
+                li{
+                    &:nth-of-type(2){
+                       padding-left: 6px;
+                    }
+                    &:nth-of-type(3){
+                        padding-left: 18px
+                    }
+                    &:nth-of-type(4){
+                        padding-left: 0px;
+                        padding-right: 16px;
+                        text-align: right;
+                    }
+                }
+           }
+           #clock-countdown{
+                width: 396px;
+                margin: 0;
            }
            .date-countdown{
                margin-bottom: 50px;
@@ -824,6 +846,7 @@
                 }
             }
             .right-image{
+                height: 400px;
                 .big{
                     width: 200px;
                     height: auto;
@@ -1015,11 +1038,24 @@
                text-align: center;
            }
            .date-section{
-                width: 388px;
+                width: 396px;
                 margin: 17px auto;
+                li{
+                    &:nth-of-type(2){
+                       padding-left: 6px;
+                    }
+                    &:nth-of-type(3){
+                        padding-left: 18px
+                    }
+                    &:nth-of-type(4){
+                        padding-left: 0px;
+                        padding-right: 16px;
+                        text-align: right;
+                    }
+                }
            }
            #clock-countdown{
-                width: 400px;
+                width: 396px;
                 margin: auto;
            }
            .btn-group{
@@ -1051,6 +1087,7 @@
                 }
             }
             .right-image{
+                height: auto;
                 .big{
                     position: static;
                     width: 233px;
@@ -1200,18 +1237,20 @@
                 margin: 0 0 20px 0;
            }
            .date-section{
-                width: 296px;
+                width: 280px;
                 margin: 6px auto;
                 font-size: 16px;
                 li{
                     &:nth-of-type(2){
-                        padding-left: 14px;
+                       padding-left: 6px;
                     }
                     &:nth-of-type(3){
-                        padding-left: 32px;
+                        padding-left: 18px
                     }
                     &:nth-of-type(4){
-                        padding-left: 44px;
+                        padding-left: 0px;
+                        padding-right: 5px;
+                        text-align: right;
                     }
                 }
            }
@@ -1219,7 +1258,7 @@
                margin-bottom: 30px;
            }
            #clock-countdown{
-                width: 310px;
+                width: 280px;
                 margin: auto;
            }
            .btn-group{
@@ -1241,6 +1280,7 @@
             width: 100%;
             padding-top: 30px;
             .right-image{
+                height: auto;
                 .big{
                     position: static;
                     width: 190px;
@@ -1356,9 +1396,33 @@
             margin: 30px auto;
         }
     }
-    #token-model-section .token:nth-of-type(1) p.intro{
-        margin-top: 40px;
+    #token-model-section{
+        padding: 50px 0;
+        h2.title{
+            margin-bottom: 10px
+        }
+        
+        figure{
+            margin: 30px 0 10px 0;
+        }
+
+        figcaption{
+            padding: 10px 0;
+        }
+        .token:nth-of-type(1) p.intro,
+        .token:nth-of-type(2) p.intro{
+            margin: 0;
+            text-align: center;
+        }
     }
+
+    #funding-section{
+        padding: 50px 0;
+        h2.title{
+            margin-bottom: 30px
+        }
+    }
+
     #team-section .roster .member{
         margin-bottom: 20px;
     }
@@ -1373,8 +1437,7 @@
     }
     #recognition-section {
         .article-wrapper{
-            width: 300px;
-             margin: 0 auto 50px auto;
+             margin: 0 auto 30px auto;
         }
     }
 
@@ -1410,5 +1473,8 @@
         #recognition-section .organization {
             margin: 0;
         }
+    }
+    #subscribe-bottom-section{
+        padding: 50px 0;
     }
 }
