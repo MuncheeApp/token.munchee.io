@@ -6,6 +6,7 @@ var favicon = require('serve-favicon');
 var MessageController = require('./routes/message');
 var SubscribeController = require('./routes/subscribe');
 var compression = require('compression');
+var https = require('https');
 /**
  * Routing & middlewares
  */
@@ -42,6 +43,15 @@ app.use(function (error, request, response, next) {
 });
 
 app.set('port', process.env.PORT || 3000);
+
+app.use(function(req, res, next) {
+    if((!req.secure) && (req.get('X-Forwarded-Proto') !== 'https')) {
+        res.redirect('https://' + req.get('Host') + req.url);
+    }
+    else{
+    	next();
+    }     
+});
 
 app.listen(app.get('port'), () => {
 	console.log('Foodee service runs on port: ' + app.get('port'));
