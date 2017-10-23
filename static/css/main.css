@@ -3,9 +3,9 @@
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, h abbr, acronym, address, big, cite, code, del, dfn, em, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
 
 * { -moz-user-select: -moz-none; -khtml-user-select: none; -webkit-user-select: none;  /* Introduced in IE 10. See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
-*/ -ms-user-select: none; user-select: none; }
+*/ -ms-user-select: none; user-select: none; word-wrap: break-word; }
 
-html, body { margin: 0; }
+html, body { margin: 0; width: 100%; height: 100%; }
 
 body { padding-top: 95px; font-size: 16px; font-family: 'Lato', sans-serif; font-weight: normal; text-rendering: optimizeLegibility !important; -webkit-font-smoothing: antialiased !important; }
 
@@ -63,6 +63,58 @@ footer p { font-size: 14px; line-height: 1.4em; }
 #munchee-popup .subscribe-field input::placeholder { font-size: 15px; color: #605E5E; }
 #munchee-popup .subscribe-btn { font-size: 15px; padding: 6px 23px; background: #ef5454; color: #fff; }
 
+/* hamburger button */
+.hamburger-btn { width: 60px; height: 45px; position: relative; margin: 0 auto; -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); -webkit-transition: .5s ease-in-out; -moz-transition: .5s ease-in-out; -o-transition: .5s ease-in-out; transition: .5s ease-in-out; cursor: pointer; }
+
+.hamburger-btn span { display: block; position: absolute; height: 8px; width: 50%; background: #ef5454; opacity: 1; -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); -webkit-transition: .25s ease-in-out; -moz-transition: .25s ease-in-out; -o-transition: .25s ease-in-out; transition: .25s ease-in-out; }
+
+.hamburger-btn span:nth-child(even) { left: 50%; border-radius: 0 9px 9px 0; }
+
+.hamburger-btn span:nth-child(odd) { left: 0px; border-radius: 9px 0 0 9px; }
+
+.hamburger-btn span:nth-child(1), .hamburger-btn span:nth-child(2) { top: 0px; }
+
+.hamburger-btn span:nth-child(3), .hamburger-btn span:nth-child(4) { top: 18px; }
+
+.hamburger-btn span:nth-child(5), .hamburger-btn span:nth-child(6) { top: 36px; }
+
+.hamburger-btn.open span:nth-child(1), .hamburger-btn.open span:nth-child(6) { -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
+
+.hamburger-btn.open span:nth-child(2), .hamburger-btn.open span:nth-child(5) { -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); }
+
+.hamburger-btn.open span:nth-child(1) { left: 5px; top: 7px; }
+
+.hamburger-btn.open span:nth-child(2) { left: calc(50% - 5px); top: 7px; }
+
+.hamburger-btn.open span:nth-child(3) { left: -50%; opacity: 0; }
+
+.hamburger-btn.open span:nth-child(4) { left: 100%; opacity: 0; }
+
+.hamburger-btn.open span:nth-child(5) { left: 5px; top: 29px; }
+
+.hamburger-btn.open span:nth-child(6) { left: calc(50% - 5px); top: 29px; }
+
+/* RESPONSIVE */
+@media (min-width: 768px) and (max-width: 979px) { h2.title { font-size: 24px; }
+  p.intro { font-size: 16px; line-height: 1.5; } }
+@media (min-width: 992px) { .container { max-width: 980px; } }
+@media (min-width: 576px) and (max-width: 768px) { #munchee-popup .modal-dialog { max-width: 450px; }
+  #munchee-popup .popup-title { font-size: 28px; }
+  #munchee-popup .subscribe-field { width: 350px; } }
+@media only screen and (max-width: 575px) { .container { width: 300px; padding: 0 10px; }
+  #munchee-popup .modal-dialog { max-width: 310px; margin: 100px auto; }
+  #munchee-popup .modal-content { padding: 20px; min-height: 340px; }
+  #munchee-popup .popup-subhead { margin-bottom: 20px; }
+  #munchee-popup .popup-title { font-size: 28px; }
+  #munchee-popup .subscribe-field { width: 100%; }
+  .hamburger-btn { width: 45px; height: 35px; }
+  .subscribe-field { display: block; width: 100%; }
+  .subscribe-field input.form-control { width: 100%; margin: 0 0 10px 0; display: block; }
+  .subscribe-field .btn { width: 100%; }
+  h2.title { font-size: 18px; }
+  p.intro { font-size: 16px; }
+  .app .app-store, .app .google-play { width: calc(50% - 8px); margin: 0; }
+  .app .google-play { margin-left: 8px; } }
 #banner-video { position: fixed; width: 100%; top: 0; left: 0; height: 100%; z-index: -2; overflow: hidden; }
 #banner-video .mchee-video { position: absolute; width: 100%; height: 100%; object-fit: cover; object-position: center center; }
 #banner-video .home-banner-img { display: none; background-image: url(../assets/preview_video.png); background-position: 0 0; background-size: cover; position: absolute; width: 100%; height: 100%; }
@@ -72,6 +124,14 @@ footer p { font-size: 14px; line-height: 1.4em; }
 
 #logo-home { display: block; width: 195px; height: 50px; position: absolute; z-index: 1; left: 0; top: 22px; }
 #logo-home img { width: 100%; height: 100%; }
+
+#menu-mobile-left { position: fixed; left: 0; top: 0; bottom: 0; right: 0; z-index: 5; width: 300px; height: 100%; overflow-y: auto; -webkit-overflow-scrolling: touch; padding: 80px 0 0 0; background-color: #ef5454; transform: translate3d(-300px, 0, 0); -webkit-transition: transform  0.3s ease; -moz-transition: transform  0.3s ease; -ms-transition: transform  0.3s ease; -o-transition: transform  0.3s ease; transition: transform  0.3s ease; }
+#menu-mobile-left.slideout { display: block; }
+#menu-mobile-left li { padding: 10px 20px; text-align: center; font-size: 0.93em; font-weight: bold; letter-spacing: 0.03em; }
+#menu-mobile-left li:active { background-color: rgba(151, 187, 216, 0.8); }
+#menu-mobile-left li a { color: #fff; font-size: 18px; text-align: left; font-weight: 300; }
+
+#menu-mobile-btn { display: none; position: absolute; left: 10px; top: 12px; z-index: 9999; }
 
 #menu-home { top: 20px; right: 0px; position: absolute; margin: auto; z-index: 2; height: 50px; line-height: 50px; text-align: right; }
 #menu-home .nav-link { font-size: 15px; font-weight: normal; line-height: 1.4em; text-align: center; color: #ffffff; display: inline-block; vertical-align: middle; padding: 0 12px; }
@@ -86,10 +146,11 @@ footer p { font-size: 14px; line-height: 1.4em; }
 #countdown-section .left-info .date-detail { font-size: 21px; margin: 0 0 30px 0; }
 #countdown-section .left-info .date-detail:nth-last-of-type(1) { text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -1px -1px 1px; }
 #countdown-section .left-info .date-countdown { margin: 20px 0 80px 0; }
-#countdown-section .left-info .date-section { height: 31px; line-height: 31px; font-size: 24px; box-shadow: black 0px 0px 12.1634px; text-shadow: white 0px 0px 2.43268px; background: #000; width: 610px; margin: 17px 0 17px 5px; }
+#countdown-section .left-info .date-section { height: 31px; line-height: 31px; font-size: 24px; box-shadow: black 0px 0px 12.1634px; text-shadow: white 0px 0px 2.43268px; background: #000; width: 610px; max-width: 100%; overflow-x: hidden; margin: 17px 0 17px 5px; }
 #countdown-section .left-info .date-section li { display: inline-block; width: 25%; margin: 0 0 0 -4px; text-align: center; }
+#countdown-section .left-info .date-section li:nth-of-type(2) { padding-left: 0px; }
 #countdown-section .left-info .date-section li:nth-of-type(3) { padding-left: 14px; }
-#countdown-section .left-info .date-section li:nth-last-of-type(1) { padding-left: 24px; }
+#countdown-section .left-info .date-section li:nth-of-type(4) { padding-left: 0; padding-right: 40px; text-align: right; }
 #countdown-section .left-info .btn-bg_pink-text_white { width: 273px; height: 62px; line-height: 62px; }
 
 #clock-countdown { margin: 0; }
@@ -97,9 +158,9 @@ footer p { font-size: 14px; line-height: 1.4em; }
 #clock-countdown ul li a div div.inn { background-color: #000; }
 
 #countdown-section .right-info { padding-top: 80px; float: right; width: calc(100% - 620px); height: 100%; }
-#countdown-section .right-info .right-image { margin-top: 30px; text-align: center; position: relative; }
-#countdown-section .right-info .right-image .big { width: 258px; height: 445px; object-fit: cover; }
-#countdown-section .right-info .right-image .small { width: 181px; height: 334px; object-fit: cover; position: absolute; left: 61%; top: 30%; }
+#countdown-section .right-info .right-image { margin-top: 30px; text-align: center; position: relative; height: 495px; }
+#countdown-section .right-info .right-image .big { width: 258px; height: 445px; object-fit: cover; position: absolute; left: 25px; top: 0; }
+#countdown-section .right-info .right-image .small { width: 181px; height: 334px; object-fit: cover; position: absolute; left: 142px; top: 162px; }
 
 /* youtube section */
 #youtube-section { padding: 106px 0; text-align: center; background: linear-gradient(to bottom, transparent 0%, white 100%); }
@@ -117,12 +178,12 @@ footer p { font-size: 14px; line-height: 1.4em; }
 /* Current Problem */
 #current-problem-section { color: #fff; padding: 140px 0; background-image: url(../assets/current_problem_bg.png); background-size: cover; background-repeat: no-repeat; background-position: center center; }
 #current-problem-section > .container { padding: 20px 80px; }
-#current-problem-section .title { font-size: 25px; letter-spacing: 0.2em; text-align: center; margin-bottom: 50px; }
-#current-problem-section p { font-size: 17px; line-height: 1.6; letter-spacing: 0.05em; margin-bottom: 30px; }
+#current-problem-section .title { margin-bottom: 50px; }
+#current-problem-section p.intro { margin-bottom: 30px; }
 
 /* Solution section */
 #solution-section { color: #fff; padding: 140px 0; background-image: url(../assets/solution_bg.png); background-size: cover; background-repeat: no-repeat; background-position: center center; text-align: center; }
-#solution-section .title { font-size: 25px; letter-spacing: 0.2em; text-align: center; margin-bottom: 30px; }
+#solution-section .title { margin-bottom: 30px; }
 #solution-section p.intro { margin-bottom: 30px; }
 #solution-section .solution-list { margin: 80px 0 0 0; }
 #solution-section .solution-list .item img { width: 126px; height: auto; margin: 25px auto; }
@@ -131,8 +192,8 @@ footer p { font-size: 14px; line-height: 1.4em; }
 
 /* live product section */
 #live-product-section { background: #fff; padding: 106px 0; text-align: center; }
-#live-product-section h2.title { font-size: 25px; letter-spacing: 0.2em; text-align: center; margin-bottom: 25px; color: #ef5454; }
-#live-product-section p { color: #0E2E47; font-size: 17px; letter-spacing: 0.05em; text-align: center; }
+#live-product-section h2.title { margin-bottom: 25px; color: #ef5454; }
+#live-product-section p.intro { color: #0E2E47; }
 #live-product-section .app { margin-top: 30px; }
 #live-product-section .app .title { font-size: 17px; color: #0E2E47; letter-spacing: 0.05em; margin-bottom: 10px; }
 #live-product-section .btn-bg_pink-text_white { width: 325px; height: 47px; line-height: 47px; display: block; margin: 40px auto; }
@@ -153,10 +214,10 @@ footer p { font-size: 14px; line-height: 1.4em; }
 
 /* Token model */
 #token-model-section { background: #2f2e2e; color: #fff; padding: 106px 0; }
-#token-model-section .title { margin-bottom: 50px; }
-#token-model-section .token-desc { font-size: 17px; letter-spacing: 0.05em; max-width: 700px; margin: auto; }
-#token-model-section .token:nth-of-type(1) .token-desc { text-align: left; margin-top: 150px; margin-left: 15px; }
-#token-model-section .token:nth-of-type(2) .token-desc { text-align: center; margin-top: 50px; }
+#token-model-section h2.title { margin-bottom: 50px; }
+#token-model-section p.intro { max-width: 700px; margin: auto; }
+#token-model-section .token:nth-of-type(1) p.intro { text-align: left; margin-top: 150px; margin-left: 15px; }
+#token-model-section .token:nth-of-type(2) p.intro { text-align: center; margin-top: 50px; }
 #token-model-section figure { text-align: center; margin: 30px 0; }
 #token-model-section figcaption { padding: 30px 0; text-align: center; }
 #token-model-section figcaption p { line-height: 1.6em; font-size: 14px; font-style: italic; letter-spacing: 0.05em; }
@@ -181,17 +242,17 @@ footer p { font-size: 14px; line-height: 1.4em; }
 .timeline-roadmap .event.event-happened .icon { width: 36px; height: 36px; background-image: url(../assets/check.png); background-size: contain; background-position: 0 0; background-repeat: no-repeat; position: absolute; left: calc(50% - 18px); }
 .timeline-roadmap .event.event-happening .icon { width: 42px; height: 42px; border: 4px solid #fff; border-radius: 50%; background-image: url(../assets/event_happening.png); background-size: contain; background-position: center center; background-repeat: no-repeat; position: absolute; left: calc(50% - 21px); }
 .timeline-roadmap .event.event-unhappened .icon { width: 22px; height: 22px; border: 1px solid #fff; border-radius: 50%; background: #fff; position: absolute; left: calc(50% - 11px); }
-.timeline-roadmap .event .info { width: 50%; position: absolute; }
+.timeline-roadmap .event .info { width: 50%; }
 .timeline-roadmap .event .info .event-time { font-size: 25px; letter-spacing: 0.2em; margin-bottom: 15px; }
 .timeline-roadmap .event .info p { font-size: 17px; font-weight: normal; letter-spacing: 0.05em; line-height: 1.5; margin-bottom: 15px; }
-.timeline-roadmap .event:nth-of-type(2n) .info { left: 0; text-align: right; padding-right: 45px; }
-.timeline-roadmap .event:nth-of-type(2n+1) .info { right: 0; text-align: left; padding-left: 45px; }
+.timeline-roadmap .event:nth-of-type(2n) .info { text-align: right; padding-right: 45px; float: left; }
+.timeline-roadmap .event:nth-of-type(2n+1) .info { text-align: left; padding-left: 45px; float: right; }
 
 /* Our team */
 #team-section { background: #fff; padding: 106px 0; color: #2F2E2E; }
 #team-section h2.title { color: #ef5454; margin-bottom: 100px; }
-#team-section .roster { margin-bottom: 60px; }
-#team-section .member { color: #0E2E47; }
+#team-section .member { color: #0E2E47; margin-bottom: 60px; }
+#team-section .member .avatar { text-align: center; }
 #team-section .member .title { font-family: 'Helvetica', sans-serif; font-size: 16px; font-weight: bold; line-height: 1.4em; text-align: center; margin: 12px 0 0 0; }
 #team-section .member .linkedin, #team-section .member .own-website { display: block; width: 30px; height: 30px; margin: 8px auto 0 auto; background-size: 100% 100%; background-repeat: no-repeat; }
 #team-section .member .linkedin { background-image: url(../assets/linkedin.png); }
@@ -199,7 +260,7 @@ footer p { font-size: 14px; line-height: 1.4em; }
 #team-section .member .info { font-size: 14px; font-weight: 300; line-height: 1.4em; letter-spacing: 0.05em; text-align: justify; margin-top: 12px; }
 #team-section .roster .member:nth-of-type(2) { margin-top: -60px; }
 #team-section .roster:nth-last-of-type(1) { margin-bottom: 0; }
-#team-section .roster:nth-last-of-type(1) .member { margin: -60px auto 0 auto; }
+#team-section .roster:nth-last-of-type(1) .member { margin: -20px auto 0 auto; }
 
 /* Partner */
 #partner-section { background: #e8e8e8; padding: 80px 0; }
@@ -222,9 +283,6 @@ footer p { font-size: 14px; line-height: 1.4em; }
 
 #subscribe-bottom-section { position: relative; padding: 120px 0; width: 100%; overflow: hidden; color: #fff; text-align: center; }
 #subscribe-bottom-section .title { font-size: 32px; margin: 0 0 50px 0; }
-#subscribe-bottom-section .subscribe-field { width: 507px; margin: auto; }
-#subscribe-bottom-section .subscribe-field input { padding: 10px; background-color: white; color: #0E2E47; font-size: 16px; font-weight: 300; line-height: 20px; width: 296px; margin-right: 12px; border: 0; border-radius: 0; }
-#subscribe-bottom-section .subscribe-field input::placeholder { color: #000; }
 #subscribe-bottom-section .parallax { width: 100%; background-size: cover; background-image: url(../assets/bottom_bg.png); background-size: cover; background-position: center -200px; position: absolute; background-repeat: no-repeat; top: 0; left: 0; transition: background-position 0.3s ease; }
 
 #subscribe-bottom-btn { background-color: #ef5454; border: 2px solid #ef5454; border-color: #ef5454; color: #fff; border-radius: 0; padding: 9px 16px; }
@@ -235,3 +293,165 @@ footer p { font-size: 14px; line-height: 1.4em; }
 #social-media-horizontal-list { list-style: none; margin: 40px 0 20px 0; }
 #social-media-horizontal-list li { display: inline-block; margin: 0 15px 0 -4px; border: 1px solid #fff; border-radius: 50%; width: 26px; height: 26px; line-height: 22px; text-align: center; }
 #social-media-horizontal-list li img { max-width: 18px; }
+
+/* RESPONSIVE */
+@media (min-width: 768px) and (max-width: 991px) { body { font-size: 15px; }
+  #logo-home { width: 140px; height: auto; top: 30px; }
+  #menu-home .nav-link { font-size: 13px; padding: 0 4px; }
+  #countdown-section .left-info { width: 410px; }
+  #countdown-section .left-info .slogan { font-size: 16px; margin-bottom: 40px; }
+  #countdown-section .left-info .date-detail { font-size: 14px; }
+  #countdown-section .left-info .date-section { width: 396px; font-size: 20px; margin-left: 0; }
+  #countdown-section .left-info .date-section li:nth-of-type(2) { padding-left: 6px; }
+  #countdown-section .left-info .date-section li:nth-of-type(3) { padding-left: 18px; }
+  #countdown-section .left-info .date-section li:nth-of-type(4) { padding-left: 0px; padding-right: 16px; text-align: right; }
+  #countdown-section .left-info #clock-countdown { width: 396px; margin: 0; }
+  #countdown-section .left-info .date-countdown { margin-bottom: 50px; }
+  #countdown-section .left-info .btn-bg_pink-text_white { font-size: 14px; width: 197px; height: 46px; line-height: 46px; margin-right: 7px; }
+  #countdown-section .right-info { width: calc(100% - 410px); }
+  #countdown-section .right-info .app .app-store, #countdown-section .right-info .app .google-play { width: calc(50% - 8px); margin-right: 5px; }
+  #countdown-section .right-info .right-image { height: 400px; }
+  #countdown-section .right-info .right-image .big { width: 200px; height: auto; }
+  #countdown-section .right-info .right-image .small { width: 140px; height: auto; left: 140px; top: 135px; }
+  /* clock countdown */
+  .flip-clock-wrapper ul { margin: 2px; width: 40px; height: 60px; line-height: 60px; }
+  .flip-clock-wrapper ul li { line-height: 60px; }
+  .flip-clock-wrapper ul li a div div.inn { font-size: 45px; }
+  .flip-clock-divider { width: 14px; height: 60px; }
+  .flip-clock-dot { left: 2px; }
+  .flip-clock-dot.top { top: 35px; }
+  #youtube-section iframe { width: 600px; height: 338px; }
+  .whitepaper-list .btn-bg_pink-text_white { font-size: 14px; }
+  .whitepaper-list .col-sm-3 { padding: 0 2px; }
+  #subscribe-section .title { font-size: 31px; }
+  #subscribe-section p { font-size: 16px; }
+  #solution-section .solution-list .item .name { font-size: 19px; margin-bottom: 8px; height: 40px; overflow-y: hidden; }
+  #live-product-section .showcase .case .image { width: 260px; }
+  #live-product-section .showcase .case .info { width: calc(100% - 260px); }
+  #live-product-section .showcase .case .info .wrap p { font-size: 20px; }
+  .timeline-roadmap .event .info .event-time { font-size: 24px; }
+  .timeline-roadmap .event .info p { font-size: 16px; }
+  #recognition-section .article-wrapper { height: 360px; }
+  #recognition-section .article-wrapper .image-hero { height: 120px; }
+  #recognition-section .article-wrapper .title { font-size: 17px; }
+  #social-media-vertical-list { right: 20px; } }
+@media (min-width: 576px) and (max-width: 768px) { body { padding-top: 70px; }
+  #top-nav { height: 70px; background: #000; }
+  #menu-home { display: none; }
+  #menu-mobile-btn { display: block; }
+  #logo-home { top: 15px; left: calc(50% - 75px); width: 150px; height: 40px; }
+  #logo-home img { max-width: 100%; height: auto; }
+  /* clock countdown */
+  .flip-clock-wrapper ul { margin: 2px; width: 40px; height: 60px; line-height: 60px; }
+  .flip-clock-wrapper ul li { line-height: 60px; }
+  .flip-clock-wrapper ul li a div div.inn { font-size: 45px; }
+  .flip-clock-divider { width: 14px; height: 60px; }
+  .flip-clock-dot { left: 2px; }
+  .flip-clock-dot.top { top: 35px; }
+  #countdown-section .left-info { float: none; width: 100%; }
+  #countdown-section .left-info .slogan { text-align: center; }
+  #countdown-section .left-info .date-detail { text-align: center; }
+  #countdown-section .left-info .date-section { width: 396px; margin: 17px auto; }
+  #countdown-section .left-info .date-section li:nth-of-type(2) { padding-left: 6px; }
+  #countdown-section .left-info .date-section li:nth-of-type(3) { padding-left: 18px; }
+  #countdown-section .left-info .date-section li:nth-of-type(4) { padding-left: 0px; padding-right: 16px; text-align: right; }
+  #countdown-section .left-info #clock-countdown { width: 396px; margin: auto; }
+  #countdown-section .left-info .btn-group { width: 100%; text-align: center; display: block; }
+  #countdown-section .left-info .btn-bg_pink-text_white { width: calc(50% - 40px); height: 62px; line-height: 62px; display: inline-block; margin-right: 20px; }
+  #countdown-section .left-info .btn-bg_pink-text_white:nth-last-of-type(1) { margin-right: 0; }
+  #countdown-section .right-info { float: none; width: 100%; }
+  #countdown-section .right-info .app .app-store, #countdown-section .right-info .app .google-play { width: calc(50% - 20px); }
+  #countdown-section .right-info .app .app-store { margin-right: 20px; }
+  #countdown-section .right-info .right-image { height: auto; }
+  #countdown-section .right-info .right-image .big { position: static; width: 233px; left: 10px; }
+  #countdown-section .right-info .right-image .small { width: 159px; right: 20%; left: auto; }
+  #youtube-section #munchee-youtube { width: 480px; height: 300px; }
+  #current-problem-section { padding: 80px 0; }
+  #solution-section { padding: 80px 0; }
+  #solution-section .solution-list .item .name, #solution-section .solution-list .item p { text-align: center; }
+  #live-product-section .showcase .case { height: 420px; }
+  #live-product-section .showcase .case .image { width: 220px; }
+  #live-product-section .showcase .case .info { width: calc(100% - 220px); }
+  #live-product-section .showcase .case:nth-of-type(even) .info { right: 0; }
+  #live-product-section .showcase .case:nth-of-type(odd) .image.overlap { width: 140px; top: 200px; right: -10px; }
+  #token-model-section .token:nth-of-type(1) p.intro { margin-top: 40px; }
+  #team-section .roster .member { margin-bottom: 20px; }
+  #team-section .roster .member:nth-of-type(2) { margin-top: 0; }
+  #team-section h2.title { margin-bottom: 60px; }
+  #team-section .roster:nth-last-of-type(1) .member { margin: 0; }
+  #recognition-section .article-wrapper { width: 300px; margin: 0 auto 50px auto; } }
+@media only screen and (max-width: 575px) { body { padding-top: 70px; }
+  #top-nav { height: 70px; background: #000; }
+  #menu-home, #social-media-vertical-list { display: none; }
+  #menu-mobile-btn { display: block; left: 5px; }
+  #logo-home { top: 15px; left: calc(50% - 75px); width: 150px; height: 40px; }
+  #logo-home img { max-width: 100%; height: auto; }
+  /* clock countdown */
+  .flip-clock-wrapper ul { margin: 2px; width: 25px; height: 45px; }
+  .flip-clock-wrapper ul li { line-height: 45px; }
+  .flip-clock-wrapper ul li a div div.inn { font-size: 33px; }
+  .flip-clock-divider { width: 16px; height: 46px; }
+  .flip-clock-dot { left: 3px; }
+  .flip-clock-dot.top { top: 28px; }
+  .flip-clock-dot.bottom { bottom: 22px; }
+  #countdown-section .left-info { float: none; width: 100%; }
+  #countdown-section .left-info .slogan { text-align: center; font-size: 19px; margin: 0 0 30px 0; }
+  #countdown-section .left-info .date-detail { text-align: center; font-size: 17px; margin: 0 0 20px 0; }
+  #countdown-section .left-info .date-section { width: 280px; margin: 6px auto; font-size: 16px; }
+  #countdown-section .left-info .date-section li:nth-of-type(2) { padding-left: 6px; }
+  #countdown-section .left-info .date-section li:nth-of-type(3) { padding-left: 18px; }
+  #countdown-section .left-info .date-section li:nth-of-type(4) { padding-left: 0px; padding-right: 5px; text-align: right; }
+  #countdown-section .left-info .date-countdown { margin-bottom: 30px; }
+  #countdown-section .left-info #clock-countdown { width: 280px; margin: auto; }
+  #countdown-section .left-info .btn-group { width: 100%; text-align: center; display: block; }
+  #countdown-section .left-info .btn-bg_pink-text_white { width: 100%; height: 50px; line-height: 50px; display: block; margin-bottom: 20px; }
+  #countdown-section .right-info { float: none; width: 100%; padding-top: 30px; }
+  #countdown-section .right-info .right-image { height: auto; }
+  #countdown-section .right-info .right-image .big { position: static; width: 190px; left: 10px; height: auto; }
+  #countdown-section .right-info .right-image .small { width: 100px; height: auto; right: 52px; left: auto; }
+  #youtube-section { padding: 40px 0px; }
+  #youtube-section #munchee-youtube { width: 280px; height: 200px; }
+  #youtube-section .whitepaper-list { margin-top: 20px; }
+  #youtube-section .whitepaper-list .btn-bg_pink-text_white { margin: 0 0 10px 0; height: 50px; line-height: 50px; }
+  #subscribe-section h2.title { font-size: 25px; letter-spacing: 0; margin-bottom: 30px; }
+  #subscribe-section p { font-size: 15px; }
+  #current-problem-section { padding: 50px 0; }
+  #current-problem-section > .container { padding: 20px 25px; }
+  #current-problem-section .title { margin-bottom: 30px; }
+  #solution-section { padding: 50px 0; }
+  #solution-section .solution-list { margin: 30px 0 0 0; }
+  #solution-section .solution-list .item .name, #solution-section .solution-list .item p { text-align: center; }
+  #live-product-section { padding: 50px 0; }
+  #live-product-section .showcase { margin-top: 50px; padding: 0; }
+  #live-product-section .showcase .case { min-height: 420px; height: auto; }
+  #live-product-section .showcase .case .image { width: 220px; margin: auto; position: static; }
+  #live-product-section .showcase .case .info { width: 100%; position: static; display: block; margin: auto; height: auto; }
+  #live-product-section .showcase .case:nth-of-type(even), #live-product-section .showcase .case:nth-of-type(odd) { position: static; text-align: center; margin-bottom: 30px; }
+  #live-product-section .showcase .case:nth-of-type(even) .wrap, #live-product-section .showcase .case:nth-of-type(odd) .wrap { display: block; width: 100%; text-align: center; }
+  #live-product-section .showcase .case:nth-of-type(even) .wrap p, #live-product-section .showcase .case:nth-of-type(odd) .wrap p { font-size: 16px; text-align: center; }
+  #live-product-section .showcase .case:nth-of-type(odd) .image.overlap { width: 140px; top: 170px; right: 8px; position: absolute; }
+  #live-product-section .showcase .case:nth-last-of-type(1) { position: relative; }
+  #live-product-section .showcase .case:nth-last-of-type(1) .info { margin-top: 30px; }
+  #live-product-section .btn-bg_pink-text_white { width: 100%; margin: 30px auto; }
+  #token-model-section { padding: 50px 0; }
+  #token-model-section h2.title { margin-bottom: 10px; }
+  #token-model-section figure { margin: 30px 0 10px 0; }
+  #token-model-section figcaption { padding: 10px 0; }
+  #token-model-section .token:nth-of-type(1) p.intro, #token-model-section .token:nth-of-type(2) p.intro { margin: 0; text-align: center; }
+  #funding-section { padding: 50px 0; }
+  #funding-section h2.title { margin-bottom: 30px; }
+  #team-section .roster .member { margin-bottom: 20px; }
+  #team-section .roster .member:nth-of-type(2) { margin-top: 0; }
+  #team-section h2.title { margin-bottom: 60px; }
+  #team-section .roster:nth-last-of-type(1) .member { margin: 0; }
+  #recognition-section .article-wrapper { margin: 0 auto 30px auto; }
+  #roadmap-section { padding: 50px 0; }
+  #roadmap-section h2.title { margin-bottom: 40px; }
+  #roadmap-section .event .info .event-time { font-size: 21px; }
+  #roadmap-section .event .info p { font-size: 15px; }
+  #roadmap-section .event:nth-of-type(2n) .info { padding-right: 20px; }
+  #roadmap-section .event:nth-of-type(2n+1) .info { padding-left: 20px; }
+  #team-section { padding: 50px 0; }
+  #recognition-section { padding: 50px 0; }
+  #recognition-section #recognition-section .organization { margin: 0; }
+  #subscribe-bottom-section { padding: 50px 0; } }

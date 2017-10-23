@@ -22,23 +22,30 @@
 </head>
 
 <body class="home-p">
-<!--<nav id="menu-mobile-left">
+<nav id="menu-mobile-left">
     <ul class="clearfix">
-        <li><a class="nav-link">HOME</a></li>
-        <li><a class="nav-link">SOLUTION</a></li>
-        <li><a  class="nav-link">PRODUCT</a></li>
-        <li><a  class="nav-link">TOKEN</a></li>
-        <li><a  class="nav-link">TEAM</a></li>
-        <li><a  class="nav-link">TIN TỨC</a></li>
-        <li><a class="nav-link">RECOGNITION</a></li>
-        <li><a class="nav-link">BLOG</a></li>
+        <li><a  class="nav-link" href="/">HOME</a></li>
+        <li><a  class="nav-link" data-target="solution-section">SOLUTION</a></li>
+        <li><a  class="nav-link" data-target="live-product-section">PRODUCT</a></li>
+        <li><a  class="nav-link" data-target="token-model-section">TOKEN</a></li>
+        <li><a  class="nav-link" data-target="roadmap-section">ROADMAP</a></li>
+        <li><a  class="nav-link" data-target="team-section">TEAM</a></li>
+        <li><a  class="nav-link" data-target="recognition-section">RECOGNITION</a></li>
+        <li><a  class="nav-link" href="https://blog.munchee.io/" target="_blank">BLOG</a></li>
 
     </ul>
-</nav>-->
+</nav>
 <header>
     <div id="top-nav">
+        <a id="menu-mobile-btn" class="hamburger-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
         <div class="container">
-            <a id="menu-mobile-btn"><span class="hamburger-btn"></span></a>
             <a id="logo-home" href="homepage.html">
                 <img src="assets/munchee_logo.png" alt="logo truong phat">
             </a>
@@ -110,45 +117,45 @@
             <div class="container">
                 <iframe id="munchee-youtube" width="832" height="467" src="https://www.youtube.com/embed/CZu_7QboA4g" frameborder="0" allowfullscreen></iframe>
                 <div class="whitepaper-list row">
-                       <div class="col-sm-3">
+                       <div class="col-sm-6 col-md-3">
                             <a class="btn-bg_pink-text_white" href="https://s3.amazonaws.com/munchee-docs/Munchee+White+Paper.pdf" 
                             target="_blank" data-content="https://s3.amazonaws.com/munchee-docs/Munchee+White+Paper.pdf" data-type="external">
                             White Paper - English</a>
                        </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-6 col-md-3">
                             <a class="btn-bg_pink-text_white" href="https://s3.amazonaws.com/munchee-docs/Munchee+White+Paper.pdf" 
                             target="_blank" data-content="https://s3.amazonaws.com/munchee-docs/Munchee+White+Paper.pdf" data-type="external">
                             White Paper - 中国</a>
                        </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-6 col-md-3">
                             <a class="btn-bg_pink-text_white" href="https://s3.amazonaws.com/munchee-docs/Munchee+White+Paper.pdf" 
                             target="_blank" data-content="https://s3.amazonaws.com/munchee-docs/Munchee+White+Paper.pdf" data-type="external">
                             White Paper - Español</a>
                        </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-6 col-md-3">
                             <a class="btn-bg_pink-text_white" href="https://s3.amazonaws.com/munchee-docs/Munchee+White+Paper.pdf" 
                             target="_blank" data-content="https://s3.amazonaws.com/munchee-docs/Munchee+White+Paper.pdf" data-type="external">
                             White Paper - Tiếng Việt</a>
                        </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-6 col-md-3">
                             <a class="btn-bg_pink-text_white" href="https://s3.amazonaws.com/munchee-docs/Munchee+White+Paper.pdf" 
                             target="_blank" data-content="https://s3.amazonaws.com/munchee-docs/Munchee+White+Paper.pdf" data-type="external">
                             White Paper - 한국어</a>
                        </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-6 col-md-3">
                             <a class="btn-bg_pink-text_white" href="https://s3.amazonaws.com/munchee-docs/Munchee+White+Paper.pdf" 
                             target="_blank" data-content="https://s3.amazonaws.com/munchee-docs/Munchee+White+Paper.pdf" data-type="external">
                             White Paper - 日本語</a>
                        </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-6 col-md-3">
                             <a class="btn-bg_pink-text_white" href="https://s3.amazonaws.com/munchee-docs/Munchee+White+Paper.pdf" 
                             target="_blank" data-content="https://s3.amazonaws.com/munchee-docs/Munchee+White+Paper.pdf" data-type="external">
                             White Paper - русский</a>
                        </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-6 col-md-3">
                             <a class="btn-bg_pink-text_white" href="https://s3.amazonaws.com/munchee-docs/Munchee+White+Paper.pdf" 
                             target="_blank" data-content="https://s3.amazonaws.com/munchee-docs/Munchee+White+Paper.pdf" data-type="external">
-                            White Paper - bahasa Indonesia</a>
+                            White Paper - Indonesia</a>
                        </div>
                 </div>
             </div>
@@ -157,8 +164,8 @@
         <div class="container">
             <h2 class="title">Join Our Whitelist</h2>
             <div class="subscribe-field input-group">
-                <input type="search" name="" id="join-munchee-top" 
-                    class="form-control top-search-field" value=""  title="" placeholder="Email Address">
+                <input type="text" name="" id="join-munchee-top" 
+                    class="form-control" value=""  title="" placeholder="Email Address">
                 <a id="subscribe-btn" class="btn">Subscribe Now</a>
             </div>
             <p>Last day to register for MUN token presale is Oct 25, 2017</p>
@@ -168,11 +175,11 @@
         <div class="container">
             <h2 class="title">CURRENT PROBLEMS</h2>
             <ul>
-                <li class="os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.3s"><p>With current centralized platforms operated by Yelp, FourSquare, etc., it is impossible to prove that there is no 
+                <li class="os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.3s"><p class="intro">With current centralized platforms operated by Yelp, FourSquare, etc., it is impossible to prove that there is no 
                     review manipulation and there is truth in the review and rating system.</p></li>
-                <li class="os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.5s"><p>Due to the lack of incentive for the standard end-users, those who have neutral or positive experiences are far 
+                <li class="os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.5s"><p class="intro">Due to the lack of incentive for the standard end-users, those who have neutral or positive experiences are far 
                     less likely to post reviews than those who have negative experiences.</p></li>
-                <li class="os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.8s"><p>Consumers and business owners are charged exorbitant amounts in terms of interest rates, fees and surcharge for 
+                <li class="os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.8s"><p class="intro">Consumers and business owners are charged exorbitant amounts in terms of interest rates, fees and surcharge for 
                     their services by existing centralized financial networks such as VISA, Mastercard etc.</p></li>
             </ul>
         </div>
@@ -209,8 +216,8 @@
     <section id="live-product-section">
         <div class="container">
             <h2 class="title">LIVE PRODUCT HIGHLIGHTS</h2>
-            <p>Munchee is a visual food review and social networking app.</p>
-            <p>Think of us as Instagram for food!</p>
+            <p class="intro">Munchee is a visual food review and social networking app.</p>
+            <p class="intro">Think of us as Instagram for food!</p>
             <div class="app">
                     <div class="app-store">
                         <h4 class="title">Available Now</h4>
@@ -275,7 +282,7 @@
             <h2 class="title">TOKEN MODEL</h2>
             <div class="row token">
                 <div class="col-sm-6">
-                    <figure>
+                    <figure class="os-animation" data-os-animation="slideInLeft" data-os-animation-delay="0.3">
                         <img src="assets/token_model1.png" alt="">
                         <figcaption>
                             <p>Munchee Token Model</p>
@@ -283,19 +290,19 @@
                     </figure>
                 </div>
                 <div class="col-sm-6">
-                    <p class="token-desc">The Munchee token (MUN) is a method of exchange inside of the Munchee ecosystem, built to facilitate meaningful advertising and promotion
+                    <p class="intro  os-animation" data-os-animation="slideInRight" data-os-animation-delay="0.3">The Munchee token (MUN) is a method of exchange inside of the Munchee ecosystem, built to facilitate meaningful advertising and promotion
                          for restaurant owners while building a quality base of content by rewarding content creators for their activity.</p>
                 </div>
             </div>
             <div class="row token">
                 <div class="col-sm-12">
-                    <figure>
+                    <figure class="os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.3">
                         <img src="assets/token_model2.png" alt="">
                         <figcaption>
                             <p>Standard internal cycle of token ownership and trade.</p>
                         </figcaption>
                     </figure>
-                    <p class="token-desc">​​Munchee users are encouraged to become active partners in maintaining the quality of the content posted in the platform by 
+                    <p class="intro os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.3s">​​Munchee users are encouraged to become active partners in maintaining the quality of the content posted in the platform by 
                         being rewarded with MUNs for their time and creativity. They can use their earned MUNs to pay for their meals/services at participating restaurants. Restaurant owners can attract more users by advertising through advertising and marketing options in Munchee. They will have an option to pay for the ad space using MUN tokens received from their customers.</p>
                 </div>
             </div>
@@ -303,16 +310,16 @@
     </section>
     <section id="funding-section">
         <div class="container">
-            <h2 class="title">FUNDING USAGE BREAKDOWN</h2>
-            <p class="intro">There will be a total and finite supply of 500,000,000 MUN. Of that supply, 225,000,000 MUN will 
+            <h2 class="title os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.3s">FUNDING USAGE BREAKDOWN</h2>
+            <p class="intro os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.3s">There will be a total and finite supply of 500,000,000 MUN. Of that supply, 225,000,000 MUN will 
                 be listed for sale as part of the token pre-sale and sale events; with 275,000,000 MUN held in reserve 
                 by the company and introduced to the market in various ways, including bounties, team compensation, 
                 testing, and to manage rewards in the future. </p>
             <div class="row chart-overview">
-                <div class="col-md-7 chart-image">
+                <div class="col-md-7 chart-image os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.5s">
                     <img src="assets/chart.png" alt="">
                 </div>
-                <div class="col-md-5 chart-desc">
+                <div class="col-md-5 chart-desc os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.5s">
                     <ul>
                         <li>
                             <div class="icon"><img src="assets/chart_green.png" alt=""></div>
@@ -342,35 +349,35 @@
             <h2 class="title">ROADMAP</h2>
             <div class="timeline-roadmap">
                 <div class="vertical-line"></div>
-                <div class="event event-happened">
+                <div class="event event-happened clearfix">
                     <div class="icon"></div>
                     <div class="info os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                         <h2 class="event-time">Q4 2015</h2>
                         <p>Company registered and development began.</p>
                     </div>
                 </div>
-                <div class="event event-happened">
+                <div class="event event-happened clearfix">
                     <div class="icon"></div>
                     <div class="info os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                         <h2 class="event-time">Q4 2016</h2>
                         <p>Private beta launched.</p>
                     </div>
                 </div>
-                <div class="event event-happened">
+                <div class="event event-happened clearfix">
                     <div class="icon"></div>
                     <div class="info os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                         <h2 class="event-time">Q1 2017</h2>
                         <p>Public beta launched.</p>
                     </div>
                 </div>
-                <div class="event event-happened">
+                <div class="event event-happened clearfix">
                     <div class="icon"></div>
                     <div class="info os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                         <h2 class="event-time">Q2 2017</h2>
                         <p>Munchee app officially launched on iOS app store for the U.S.</p>
                     </div>
                 </div>
-                <div class="event event-happening">
+                <div class="event event-happening clearfix">
                     <div class="icon"></div>
                     <div class="info os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                         <h2 class="event-time">Q4 2017</h2>
@@ -378,7 +385,7 @@
                         <p>Cryptotoken pre-sale and sale event.</p>
                     </div>
                 </div>
-                 <div class="event event-unhappened">
+                 <div class="event event-unhappened clearfix">
                     <div class="icon"></div>
                     <div class="info os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                         <h2 class="event-time">Q2 2018</h2>
@@ -386,7 +393,7 @@
                         <p>Enhance UX/UI of the app and adding new features.</p>
                     </div>
                 </div>
-                 <div class="event event-unhappened">
+                 <div class="event event-unhappened clearfix">
                     <div class="icon"></div>
                     <div class="info os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                         <h2 class="event-time">Q3 2018</h2>
@@ -394,7 +401,7 @@
                         <p>Launch user acquisition and marketing campaigns - focusing on the American and Asian markets while growing user base worldwide.</p>
                     </div>
                 </div>
-                 <div class="event event-unhappened">
+                 <div class="event event-unhappened clearfix">
                     <div class="icon"></div>
                     <div class="info os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                         <h2 class="event-time">Q4 2018</h2>
@@ -402,7 +409,7 @@
                         <p>Begin setting up in-app wallets for end-users.</p>
                     </div>
                 </div>
-                 <div class="event event-unhappened">
+                 <div class="event event-unhappened clearfix">
                     <div class="icon"></div>
                     <div class="info os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                         <h2 class="event-time">Q1 2019</h2>
@@ -410,7 +417,7 @@
                         <p>Food delivery partnership agreements.</p>
                     </div>
                 </div>
-                 <div class="event event-unhappened">
+                 <div class="event event-unhappened clearfix">
                     <div class="icon"></div>
                     <div class="info os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                         <h2 class="event-time">Q3 2019</h2>
@@ -419,7 +426,7 @@
                         <p>Integration of second Smart contract in Munchee App.</p>
                     </div>
                 </div>
-                 <div class="event event-unhappened">
+                 <div class="event event-unhappened clearfix">
                     <div class="icon"></div>
                     <div class="info os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                         <h2 class="event-time">Q4 2019</h2>
@@ -433,7 +440,7 @@
         <div class="container">
             <h2 class="title">OUR TEAM</h2>
             <div class="row roster">
-                <div class="col-md-4 member">
+                <div class="col-12 col-md-4 member os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                     <div class="avatar"><img src="assets/team/SV.jpg" alt=""></div>
                     <div class="title">Sanjeev Verma, PhD <br>Co-founder<br>U.S. Patent Holder<br>
                         Blockchain Advisor at U.C. Berkeley</div>
@@ -445,7 +452,7 @@
                         finding creative applications of Blockchain technology in both financial and non-financial world. He is currently a 
                         Mentor/Advisor (Blockchain Expert) in Data-X project, U.C. Berkeley; and a Cointelegraph contributor.</div>
                 </div>
-                 <div class="col-md-4 member">
+                 <div class="col-12 col-md-4 member os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                     <div class="avatar"><img src="assets/team/PP.jpg" alt=""></div>
                     <div class="title">Chelsea Lam<br>Co-founder<br>Former Team Lead at Google</div>
                     <a class="linkedin" href="https://www.linkedin.com/in/gianglv/"></a>
@@ -456,7 +463,7 @@
                         Chelsea is a tech – savvy, passionate, trilingual, and culturally enriched professional and entrepreneur. 
                         She has been involved with a lot of startups and enterprises both in Asia and the U.S.</div>
                 </div>
-                 <div class="col-md-4 member">
+                 <div class="col-12 col-md-4 member os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                     <div class="avatar"><img src="assets/team/NB.jpg" alt=""></div>
                     <div class="title">Nghi Bui<br>Co-founder & CTO<br>Machine Learning PhD Candidate <br>
                         Formerly at Atlassian</div>
@@ -469,7 +476,7 @@
                 </div>
             </div>
             <div class="row roster">
-                <div class="col-md-4 member">
+                <div class="col-12 col-md-4 member os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                     <div class="avatar"><img src="assets/team/KB.jpg" alt=""></div>
                     <div class="title">Kyle Bunthuwong <br>Community Manager<br>USA Gymnastics National Team</div>
                     <a class="linkedin" href="https://www.linkedin.com/in/kylebunthuwong/"></a>
@@ -479,14 +486,14 @@
                         two decades at USA Gymnastics National Team as a nationally ranked gymnast and coach, Kyle now brings his athlete 
                         mindset into the professional marketing field.</div>
                 </div>
-                 <div class="col-md-4 member">
+                 <div class="col-12 col-md-4 member os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                     <div class="avatar"><img src="assets/team/DW.jpg" alt=""></div>
                     <div class="title">Dan Weiner <br>Marketing<br></div>
                     <div class="info">Dan is a multimedia journalist by trade with experience in all forms of media. 
                         He is highly interested in politics, marketing & developing strategies for companies to succeed. 
                         Dan formerly was a marketing lead at WGMT, WSTJ, WNCS and Cabot Creamery.</div>
                 </div>
-                 <div class="col-md-4 member">
+                 <div class="col-12 col-md-4 member os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                     <div class="avatar"><img src="assets/team/MG.jpg" alt=""></div>
                     <div class="title">Matt Goldstein<br>Communications</div>
                     <a class="linkedin" href="https://www.linkedin.com/in/sverma2008/"></a>
@@ -497,7 +504,7 @@
             </div>
              <h2 class="title">ADVISORS</h2>
             <div class="row roster">
-                <div class="col-md-4 member">
+                <div class="col-12 col-md-4 member os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                     <div class="avatar"><img src="assets/team/LL.jpg" alt=""></div>
                     <div class="title">Loi Luu <br>Cofounder of KyberNetwork<br>Cofounder of Smartpool</div>
                     <a class="linkedin" href="https://www.linkedin.com/in/loiluu/"></a>
@@ -508,7 +515,7 @@
                         another open source project which embraces decentralization of mining pools in existing cryptocurrency. 
                         He continues to champion decentralization and trust-less properties of the Blockchain with KyberNetwork, taking inspiration and developing value for the community.</div>
                 </div>
-                 <div class="col-md-4 member">
+                 <div class="col-12 col-md-4 member os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                     <div class="avatar"><img src="assets/team/NA.jpg" alt=""></div>
                     <div class="title">Nick Ayton <br>Top 21 Blockchain Influencers. <br>
                         Advisor of Humaniq</div>
@@ -520,7 +527,7 @@
                         International Business Schools. He spent 35 years in technology services and is a frequent speaker and writer on all things Blockchain. 
                         Nick is expecting to publish a book on Blockchain Implementation Strategies in 2017..</div>
                 </div>
-                 <div class="col-md-4 member">
+                 <div class="col-12 col-md-4 member os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                     <div class="avatar"><img src="assets/team/AH.jpg" alt=""></div>
                     <div class="title">Addison Huegel<br>Formerly at the Ethereum <br>
                         Foundation</div>
@@ -534,7 +541,7 @@
                 </div>
             </div>
             <div class="row roster">
-                <div class="col-md-4 member">
+                <div class="col-12 col-md-4 member os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                     <div class="avatar"><img src="assets/team/AC.jpg" alt=""></div>
                     <div class="title">Andrew J. Chapin <br>Cofounder and CEO of <br>Benja/BenjaCoin</div>
                     <a class="own-website" href="https://andrewjchapin.com/"></a>
@@ -543,7 +550,7 @@
                         growth for Feathr as the VP of Business Development. Andrew has also coordinated sales, 
                         marketing, and user acquisition efforts at Microsoft and Color Labs.</div>
                 </div>
-                 <div class="col-md-4 member">
+                 <div class="col-12 col-md-4 member os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                     <div class="avatar"><img src="assets/team/BP.jpg" alt=""></div>
                     <div class="title">Bryan Pham <br>Cofounder and CTO of Cloudtenna</div>
                     <a class="linkedin" href="https://www.linkedin.com/in/bryantripham/"></a>
@@ -553,7 +560,7 @@
                         from humble beginnings and a super-star engineer, Bryan brings his 10+ years of technical expertise, business acumen and deep 
                         understanding of the tech scene in Silicon Valley, to strategically advise Munchee on all fronts.</div>
                 </div>
-                <div class="col-md-4 member">
+                <div class="col-12 col-md-4 member os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                     <div class="avatar"><img src="assets/team/MK.jpg" alt=""></div>
                     <div class="title">Min Kim <br>Chief of Staff at Civic<br>
                         Formerly at Draper University</div>
@@ -565,7 +572,7 @@
                 </div>
             </div>
             <div class="row roster">
-                <div class="col-md-4 member">
+                <div class="col-12 col-md-4 member os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3">
                     <div class="avatar"><img src="assets/team/CG.jpg" alt=""></div>
                     <div class="title">Christina Gagnier <br>Legal Counsel</div>
                     <a class="linkedin" href="https://www.linkedin.com/in/gagnier/"></a>
@@ -592,7 +599,7 @@
         <div class="container">
             <h2 class="title">RECOGNITION</h2>
             <div class="row article-list">
-                <div class="col-sm-4 article">
+                <div class="col-12 col-md-4 article">
                     <div class="article-wrapper os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3s">
                         <div class="image-section"><a  target="_blank" href="https://thenextweb.com/cryptocurrency/2017/10/13/instagram-yelp-blockchain-baby-app-foodies/"><img src="assets/articles/image_section1.png" alt=""></a></div>
                         <div class="image-hero"><img src="assets/articles/image_hero1.png" alt=""></div>
@@ -600,7 +607,7 @@
                         <a  target="_blank" href="https://thenextweb.com/cryptocurrency/2017/10/13/instagram-yelp-blockchain-baby-app-foodies/" class="btn-bg_pink-text_white">Read Article</a>
                     </div>
                 </div>
-                <div class="col-sm-4 article">
+                <div class="col-12 col-md-4 article">
                     <div class="article-wrapper os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3s">
                         <div class="image-section"><a  target="_blank" href="https://www.cointelegraph.com/news/from-messengers-to-food-reviews-companies-incorporate-blockchain-into-apps">
                             <img src="assets/articles/image_section2.png" alt=""></a></div>
@@ -609,7 +616,7 @@
                         <a href="https://www.cointelegraph.com/news/from-messengers-to-food-reviews-companies-incorporate-blockchain-into-apps" class="btn-bg_pink-text_white">Read Article</a>
                     </div>
                 </div>
-                <div class="col-sm-4 article">
+                <div class="col-12 col-md-4 article">
                     <div class="article-wrapper os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3s">
                         <div class="image-section"><a href="https://www.producthunt.com/posts/munchee-3"  target="_blank">
                             <img src="assets/articles/image_section3.png" alt=""></a></div>
@@ -620,20 +627,18 @@
                 </div>
             </div>
             <div class="row organization">
-                <div class="col-sm-2 item"><img src="assets/organization/1.png" alt=""></div>
-                <div class="col-sm-2 item"><img src="assets/organization/2.png" alt=""></div>
-                <div class="col-sm-2 item"><img src="assets/organization/3.png" alt=""></div>
-                <div class="col-sm-2 item"><img src="assets/organization/4.png" alt=""></div>
-                <div class="col-sm-2 item"><img src="assets/organization/5.png" alt=""></div>
-                <div class="col-sm-2 item"><img src="assets/organization/6.png" alt=""></div>
-            </div>
-             <div class="row organization">
-                <div class="col-sm-2 item"><img src="assets/organization/7.png" alt=""></div>
-                <div class="col-sm-2 item"><img src="assets/organization/8.png" alt=""></div>
-                <div class="col-sm-2 item"><img src="assets/organization/9.png" alt=""></div>
-                <div class="col-sm-2 item"><img src="assets/organization/10.png" alt=""></div>
-                <div class="col-sm-2 item"><img src="assets/organization/11.png" alt=""></div>
-                <div class="col-sm-2 item"><img src="assets/organization/12.png" alt=""></div>
+                <div class="col-6 col-sm-2 item"><img src="assets/organization/1.png" alt=""></div>
+                <div class="col-6 col-sm-2 item"><img src="assets/organization/2.png" alt=""></div>
+                <div class="col-6 col-sm-2 item"><img src="assets/organization/3.png" alt=""></div>
+                <div class="col-6 col-sm-2 item"><img src="assets/organization/4.png" alt=""></div>
+                <div class="col-6 col-sm-2 item"><img src="assets/organization/5.png" alt=""></div>
+                <div class="col-6 col-sm-2 item"><img src="assets/organization/6.png" alt=""></div>
+                <div class="col-6 col-sm-2 item"><img src="assets/organization/7.png" alt=""></div>
+                <div class="col-6 col-sm-2 item"><img src="assets/organization/8.png" alt=""></div>
+                <div class="col-6 col-sm-2 item"><img src="assets/organization/9.png" alt=""></div>
+                <div class="col-6 col-sm-2 item"><img src="assets/organization/10.png" alt=""></div>
+                <div class="col-6 col-sm-2 item"><img src="assets/organization/11.png" alt=""></div>
+                <div class="col-6 col-sm-2 item"><img src="assets/organization/12.png" alt=""></div>
             </div>
         </div>
     </section>
