@@ -152,19 +152,23 @@ $(function(){
         
     })
         
-    $('#subscribe-popup-btn').click(function(){
-       
-         // var action = $(this).attr('action');
-        // console.log(action)
+    $('#subscribe-popup-btn, #subscribe-btn, #subscribe-bottom-btn').click(function(e){
+        e.stopPropagation();
+        var self = this;
+        var field = $(self).parent().find('input');
+        var parentLevel2 = $(self).parent().parent();
         $.ajax({
             url: "/subscribe",
             type: 'POST',
             data: {
-                email: $('#join-munchee-popup').val(),
+                email: field.val(),
             },
             success: function (data) {
                 console.log(data)
-               
+                $(self).parent().replaceWith("<p class='notification fade' >"+data.message+"</p>");
+                setTimeout(function(){
+                    parentLevel2.find('.notification').addClass('show');
+                },200)
             },
             error: function (error) {
                 console.log(error)        

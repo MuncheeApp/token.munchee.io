@@ -185,6 +185,10 @@ p.intro{
         color: rgba(239, 84, 84, 1);
     }
 }
+/* Notification */
+.notification{
+    transition: opacity .5s linear;
+}
 
 footer{
     text-align: center;

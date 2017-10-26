@@ -38,6 +38,9 @@ p.intro { font-size: 17px; line-height: 1.6; letter-spacing: 0.05em; }
 .btn-bg_pink-text_white { display: block; min-width: 50px; min-height: 30px; font-size: 15px; color: #fff; background-color: #ef5454; border: solid #ab0535 0px; border-radius: 50px; margin-right: 40px; text-align: center; transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s; }
 .btn-bg_pink-text_white:hover { background-color: white; border: 1px solid #ef5454; color: #ef5454; }
 
+/* Notification */
+.notification { transition: opacity .5s linear; }
+
 footer { text-align: center; height: 66px; font-weight: 300; color: #fff; background: #000; display: table; width: 100%; }
 footer .container { display: table-cell; vertical-align: middle; }
 footer p { font-size: 14px; line-height: 1.4em; }
