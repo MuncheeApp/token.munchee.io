@@ -127,4 +127,53 @@ $(function(){
     $('#menu-mobile-btn').click(function(){
 		$(this).toggleClass('open');
 	});
+
+
+    // function onSubmit () {
+    $('#subscribe-bottom-btn').click(function(){
+       
+         // var action = $(this).attr('action');
+        // console.log(action)
+        $.ajax({
+            url: "/subscribe",
+            type: 'POST',
+            data: {
+                email: $('#join-munchee-bottom').val(),
+            },
+            success: function (data) {
+                console.log(data)
+               
+            },
+            error: function (error) {
+                console.log(error)        
+            }
+        });
+        return false;
+        
+    })
+        
+    $('#subscribe-popup-btn').click(function(){
+       
+         // var action = $(this).attr('action');
+        // console.log(action)
+        $.ajax({
+            url: "/subscribe",
+            type: 'POST',
+            data: {
+                email: $('#join-munchee-popup').val(),
+            },
+            success: function (data) {
+                console.log(data)
+               
+            },
+            error: function (error) {
+                console.log(error)        
+            }
+        });
+        return false;
+        
+    })
+        
+    // }
+    // onSubmit();
 })
