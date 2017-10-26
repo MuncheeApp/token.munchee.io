@@ -55,7 +55,7 @@ $(function(){
 
         $('#youtube-section').css({
             opacity: function() {
-            var elementHeight = $(this).height();
+            var elementHeight = $('#munchee-youtube').height();
                 var temp = elementHeight - scrollTop;
                 if(temp > 0) {
                     opacity = 1 - ((elementHeight - scrollTop) / elementHeight);
