@@ -119,6 +119,7 @@ button, .btn{
     -ms-transition: background 100ms linear;
     -o-transition: background 100ms linear;
     transition: background 100ms linear;
+    cursor: pointer;
     &:focus{
         outline: 0;
     }
