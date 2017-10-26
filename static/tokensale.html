@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Crowdsale page</title>
+   </head>
+   <body>
+      <div id="chainstarter-app"></div>
+      <script src="https://chainstarter.mesh0.com/widget.min.js"></script>
+      <script>
+    
+        Chainstarter.render('chainstarter-app', {
+            config: {
+                crowdsaleId: 7,
+                termsAndConditionsUrl: 'http://crowdsale-website.com/terms-and-conditions.pdf'
+            },
+            styles: {
+                appContainer: {
+                    width: '100%'
+                }
+            }
+        })
+      </script>
+   </body>
+</html>
