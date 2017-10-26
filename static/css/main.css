@@ -164,9 +164,10 @@ footer p { font-size: 14px; line-height: 1.4em; }
 
 /* youtube section */
 #youtube-section { padding: 106px 0; text-align: center; background: linear-gradient(to bottom, transparent 0%, white 100%); }
+#youtube-section h2.title { margin-top: 60px; margin-bottom: 50px; }
 
-.whitepaper-list { margin-top: 60px; }
-.whitepaper-list .btn-bg_pink-text_white { margin: 0 0 30px 0; height: 67px; line-height: 67px; }
+.whitepaper-list .btn-bg_pink-text_white { margin: 0 0 0 0; height: 50px; line-height: 50px; }
+.whitepaper-list .btn-bg_pink-text_white.not-available { background-color: #c2c2c2; pointer-events: none; }
 
 /* subscribe */
 #subscribe-section { padding: 106px 0; background: #ef5454; color: #fff; text-align: center; }
@@ -225,12 +226,13 @@ footer p { font-size: 14px; line-height: 1.4em; }
 /* Funding */
 #funding-section { padding: 106px 0; background: #fff; }
 #funding-section h2.title { color: #ef5454; margin-bottom: 50px; }
-#funding-section p.intro { color: #0E2E47; text-align: center; padding: 0 15px; }
+#funding-section p.intro { color: #0E2E47; text-align: center; padding: 0 15px; margin-bottom: 30px; }
 #funding-section .chart-overview { margin-top: 50px; }
 #funding-section .chart-overview ul { list-style: none; }
 #funding-section .chart-overview .chart-desc { padding-top: 120px; }
 #funding-section .chart-overview .icon { display: inline-block; vertical-align: top; width: 32px; margin-top: 6px; }
 #funding-section .chart-overview .data { font-size: 14px; color: #0E2E47; display: inline-block; vertical-align: middle; width: calc(100% - 36px); margin-left: -4px; margin-bottom: 20px; padding-left: 20px; }
+#funding-section .chart-overview .data-table { margin-top: 50px; }
 
 /* Road map */
 #roadmap-section { background: #2f2e2e; color: #fff; padding: 106px 0; }
@@ -279,7 +281,7 @@ footer p { font-size: 14px; line-height: 1.4em; }
 #recognition-section .article-wrapper .title { font-family: 'Helvetica',sans-serif; font-weight: bold; font-size: 18px; color: #2F2E2E; margin: 18px 0; height: 80px; overflow-y: hidden; }
 #recognition-section .article-wrapper a.btn-bg_pink-text_white { width: 142px; height: 40px; line-height: 40px; display: block; margin: 10px auto; }
 #recognition-section .organization { margin: 30px 0; }
-#recognition-section .organization .item { height: 40px; }
+#recognition-section .organization .item { height: 40px; margin-bottom: 20px; }
 
 #subscribe-bottom-section { position: relative; padding: 120px 0; width: 100%; overflow: hidden; color: #fff; text-align: center; }
 #subscribe-bottom-section .title { font-size: 32px; margin: 0 0 50px 0; }
@@ -366,6 +368,8 @@ footer p { font-size: 14px; line-height: 1.4em; }
   #countdown-section .right-info .right-image .big { position: static; width: 233px; left: 10px; }
   #countdown-section .right-info .right-image .small { width: 159px; right: 20%; left: auto; }
   #youtube-section #munchee-youtube { width: 480px; height: 300px; }
+  #youtube-section .whitepaper-list .btn-bg_pink-text_white { margin: 0 0 10px 0; height: 50px; line-height: 50px; }
+  #youtube-section .whitepaper-list > .col { flex-basis: 100%; }
   #current-problem-section { padding: 80px 0; }
   #solution-section { padding: 80px 0; }
   #solution-section .solution-list .item .name, #solution-section .solution-list .item p { text-align: center; }
@@ -411,8 +415,10 @@ footer p { font-size: 14px; line-height: 1.4em; }
   #countdown-section .right-info .right-image .small { width: 100px; height: auto; right: 52px; left: auto; }
   #youtube-section { padding: 40px 0px; }
   #youtube-section #munchee-youtube { width: 280px; height: 200px; }
+  #youtube-section h2.title { margin: 30px 0 20px 0; }
   #youtube-section .whitepaper-list { margin-top: 20px; }
   #youtube-section .whitepaper-list .btn-bg_pink-text_white { margin: 0 0 10px 0; height: 50px; line-height: 50px; }
+  #youtube-section .whitepaper-list > .col { flex-basis: 100%; }
   #subscribe-section h2.title { font-size: 25px; letter-spacing: 0; margin-bottom: 30px; }
   #subscribe-section p { font-size: 15px; }
   #current-problem-section { padding: 50px 0; }
@@ -440,6 +446,7 @@ footer p { font-size: 14px; line-height: 1.4em; }
   #token-model-section .token:nth-of-type(1) p.intro, #token-model-section .token:nth-of-type(2) p.intro { margin: 0; text-align: center; }
   #funding-section { padding: 50px 0; }
   #funding-section h2.title { margin-bottom: 30px; }
+  #funding-section .chart-overview .chart-desc { padding-top: 50px; }
   #team-section .roster .member { margin-bottom: 20px; }
   #team-section .roster .member:nth-of-type(2) { margin-top: 0; }
   #team-section h2.title { margin-bottom: 60px; }

@@ -230,13 +230,20 @@
     to bottom,
     transparent 0%,
     rgba(255, 255, 255, 1) 100%);
+    h2.title{
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
 }
 .whitepaper-list {
-    margin-top: 60px;
     .btn-bg_pink-text_white{
-        margin: 0 0 30px 0;
-        height: 67px;
-        line-height: 67px;
+        margin: 0 0 0 0;
+        height: 50px;
+        line-height: 50px;
+        &.not-available{
+            background-color: rgba(194, 194, 194, 1);
+            pointer-events: none;
+        }
     }
 }
 /* subscribe */
@@ -462,6 +469,7 @@
         color: #0E2E47;
         text-align: center;
         padding: 0 15px;
+        margin-bottom: 30px;
     }
     .chart-overview{
         margin-top: 50px;
@@ -486,6 +494,9 @@
             margin-left: -4px;
             margin-bottom: 20px;
             padding-left: 20px;
+        }
+        .data-table{
+            margin-top: 50px;
         }
     }
 }
@@ -705,6 +716,7 @@
         margin: 30px 0;
         .item{
             height: 40px;
+            margin-bottom: 20px;
         }
     }
 }
@@ -1107,6 +1119,16 @@
             width: 480px;
             height: 300px;
         }
+         .whitepaper-list {
+            .btn-bg_pink-text_white {
+                margin: 0 0 10px 0;
+                height: 50px;
+                line-height: 50px;
+            }
+            & > .col{
+                flex-basis: 100%;
+            }
+        }
     }
 
     #current-problem-section{
@@ -1303,12 +1325,18 @@
             width: 280px;
             height: 200px;
         }
+        h2.title{
+            margin: 30px 0 20px 0;
+        }
         .whitepaper-list {
             margin-top: 20px;
             .btn-bg_pink-text_white {
                 margin: 0 0 10px 0;
                 height: 50px;
                 line-height: 50px;
+            }
+            & > .col{
+                flex-basis: 100%;
             }
         }
     }
@@ -1420,6 +1448,9 @@
         padding: 50px 0;
         h2.title{
             margin-bottom: 30px
+        }
+        .chart-overview .chart-desc{
+            padding-top: 50px;
         }
     }
 
