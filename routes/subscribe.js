@@ -1,6 +1,7 @@
 var mcapi = require('mailchimp-api/mailchimp');
 
-mc = new mcapi.Mailchimp('72a5325971a1bf787451b935f0e588af-us14');
+var MAILCHIMP_KEY = process.env.MAILCHIMP_KEY || "None"  
+mc = new mcapi.Mailchimp(MAILCHIMP_KEY);
 
 exports.subscribe = function (req, res, next) {
 	console.log("Submitting to rout subscribe")
