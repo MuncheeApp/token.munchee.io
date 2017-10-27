@@ -7,9 +7,12 @@ var MessageController = require('./routes/message');
 var SubscribeController = require('./routes/subscribe');
 var compression = require('compression');
 var https = require('https');
+var cors = require('cors')
 /**
  * Routing & middlewares
  */
+
+app.use(cors())
 app.use(express.static(__dirname + '/static'));
 
 // parse application/json

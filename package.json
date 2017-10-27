@@ -9,6 +9,7 @@
   "dependencies": {
     "body-parser": "^1.15.0",
     "compression": "^1.6.2",
+    "cors": "^2.8.4",
     "express": "^4.13.4",
     "mailchimp-api": "^2.0.7",
     "nodemailer": "^2.3.1",
