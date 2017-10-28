@@ -1,5 +1,6 @@
 $(function(){
-    var date = new Date(2017, 9, 30);
+    //var date = new Date(2017, 9, 31);
+    var date = new Date("31 Oct 2017 18:08:30 GMT");
     var now = new Date();
     var diff = (date.getTime()/1000) - (now.getTime()/1000);
 
@@ -105,6 +106,17 @@ $(function(){
         }
     });
 
+    $("#whitepaper-btn").click(function(e) {
+        e.stopPropagation()
+        var des = $('.whitepaper-list')[0];
+        console.log(des)
+        if (des){
+            $('html, body').animate({
+                scrollTop: $(des).offset().top - 100 - $('#top-nav')[0].clientHeight
+            }, 1000);
+        }
+    });
+
     // show menu mobile 
     $("#menu-mobile-btn").on("click", function(e) {
         e.stopPropagation();
@@ -128,29 +140,6 @@ $(function(){
 		$(this).toggleClass('open');
 	});
 
-
-    // function onSubmit () {
-    $('#subscribe-bottom-btn').click(function(){
-       
-         // var action = $(this).attr('action');
-        // console.log(action)
-        $.ajax({
-            url: "/subscribe",
-            type: 'POST',
-            data: {
-                email: $('#join-munchee-bottom').val(),
-            },
-            success: function (data) {
-                console.log(data)
-               
-            },
-            error: function (error) {
-                console.log(error)        
-            }
-        });
-        return false;
-        
-    })
         
     $('#subscribe-popup-btn, #subscribe-btn, #subscribe-bottom-btn').click(function(e){
         e.stopPropagation();
@@ -178,6 +167,4 @@ $(function(){
         
     })
 
-    // }
-    // onSubmit();
 })

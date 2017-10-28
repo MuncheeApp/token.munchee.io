@@ -146,6 +146,10 @@
         &:nth-last-of-type(1){
             text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -1px -1px 1px;
         }
+        a {
+            text-decoration: underline;
+            color: #fff;
+        }
     }
     .date-countdown{
         margin: 20px 0 80px 0;
@@ -269,6 +273,48 @@
     font-weight: bold;
     border-radius: 0;
     padding: 9px 24px;
+}
+
+/* Pull quote */
+#pullquote-section{
+    text-align: center;
+    background: #fff;
+    padding: 80px 0;
+    & > .container{
+        &:before, &:after{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 45px;
+            height: 50px;
+            background-position: 0 0;
+            background-size: 100% auto;
+        }
+        &:before{
+            background-image:url('../assets/beforequote.png');
+            top:0;
+            left: 10px;
+        }
+        &:after{
+            background-image:url('../assets/afterquote.png');
+            bottom: 0;
+            right: 10px;
+        }
+    }
+    .image{
+        margin-bottom: 30px;
+    }
+    img{
+        margin-bottom: 20px;
+        width: 110px;
+        height: 110px;
+    }
+    h4 {
+        font-family: 'Helvetica';
+        font-size: 16px;
+        color: #2F2E2E;
+        font-weight: bold;
+    }
 }
 
 /* Current Problem */
@@ -432,10 +478,12 @@
         max-width: 700px;
         margin: auto;
     }
+    .left-info{
+        padding: 150px 0 0 15px;
+    }
     .token:nth-of-type(1) p.intro{
         text-align: left;
-        margin-top: 150px;
-        margin-left: 15px;
+        margin-bottom: 20px;
     }
     .token:nth-of-type(2) p.intro{
         text-align: center;
@@ -1166,8 +1214,17 @@
             }
         }
     }
-    #token-model-section .token:nth-of-type(1) p.intro{
-        margin-top: 40px;
+    #token-model-section{
+        .left-info{
+            padding-top: 40px;
+        }
+        .token:nth-of-type(1) p.intro{
+            text-align: center;
+        }
+        .token:nth-of-type(2) p.intro{
+            margin: 0;
+            text-align: center;
+        }
     }
     #team-section .roster .member{
         margin-bottom: 20px;
@@ -1350,6 +1407,29 @@
             font-size: 15px;
         }
     }
+    /* Pull quote */
+#pullquote-section{
+    & > .container{
+        &:before, &:after{
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%)
+        }
+        &:before{
+            margin-bottom: 20px;
+        }
+        &:after{
+            right: auto;
+            margin-top: 0;
+        }
+    }
+    .image{
+        margin-bottom: 20px;
+    }
+    p.pullQuote{
+        padding: 0;
+    }
+}
     #current-problem-section{
         padding: 50px 0;
         & >  .container {
@@ -1437,7 +1517,9 @@
         figcaption{
             padding: 10px 0;
         }
-        .token:nth-of-type(1) p.intro,
+        .left-info{
+            padding: 0;
+        }
         .token:nth-of-type(2) p.intro{
             margin: 0;
             text-align: center;
