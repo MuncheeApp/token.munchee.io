@@ -141,11 +141,12 @@ $(function(){
 	});
 
         
-    $('#subscribe-popup-btn, #subscribe-btn, #subscribe-bottom-btn').click(function(e){
+    $('#subscribe-popup-btn, #subscribe-button, #subscribe-bottom-btn').click(function(e){
         e.stopPropagation();
         var self = this;
         var field = $(self).parent().find('input');
         var parentLevel2 = $(self).parent().parent();
+        console.log(field.val())
         $.ajax({
             url: "/subscribe",
             type: 'POST',
