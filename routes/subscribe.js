@@ -1,7 +1,7 @@
 var mcapi = require('mailchimp-api/mailchimp');
 
 var MAILCHIMP_KEY = process.env.MAILCHIMP_KEY || "None"  
-var LIST_ID = process.env.LIST_ID || "06679077d3"
+var LIST_ID = process.env.LIST_ID || "b55cb6b73d"
 mc = new mcapi.Mailchimp(MAILCHIMP_KEY);
 
 
