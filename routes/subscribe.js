@@ -15,7 +15,7 @@ exports.subscribe = function (req, res, next) {
 		return res.json({ message: 'Thank you! You have successfully subscribed to receive latest updates about our launch.'});
 	}, function (error) {
 		if (error) {
-			console.log(error)
+			console.log(error.error)
 			return res.status(400).json({ message: error.error});
 		}
 	});
