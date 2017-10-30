@@ -26,6 +26,10 @@ exports.subscribe = function (req, res, next) {
 	}, function (error) {
 		if (error) {
 			console.log(error.error)
+			fs.appendFile('./log_error.txt', error.error + "\n", function (err) {
+				console.log('Saved Error!');
+			});
+			
 			return res.status(400).json({ message: error.error});
 		}
 	});
