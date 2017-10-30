@@ -162,6 +162,10 @@ $(function(){
             },
             error: function (error) {
                 console.log(error)        
+                $(self).parent().replaceWith("<p class='notification fade' >"+error.message+"</p>");
+                setTimeout(function(){
+                    parentLevel2.find('.notification').addClass('show');
+                },200)
             }
         });
         return false;
