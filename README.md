@@ -1,5 +1,5 @@
 # Source code for token.munchee.io
-To deploy to Heroku , run the command
+Run this script and navigate to localhost:3000 to view the website
 
 ```javascript
 ./deploy.sh
@@ -8,5 +8,5 @@ To deploy to Heroku , run the command
 Remember to grant executing permission for this file by running
 
 ```javascript
-chmod u+x deploy.sh
+chmod 400 deploy.sh
 ```
