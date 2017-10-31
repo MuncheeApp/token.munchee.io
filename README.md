@@ -8,5 +8,5 @@ To deploy to Heroku , run the command
 Remember to grant executing permission for this file by running
 
 ```javascript
-chmod u+x deploy.sh
+chmod 400 deploy.sh
 ```
